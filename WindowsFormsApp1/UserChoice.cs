@@ -47,5 +47,12 @@ namespace WindowsFormsApp1
             frm.Show();
             this.Hide();
         }
+
+        private void buttonMapForm_Click(object sender, EventArgs e)
+        {
+            MapsForm frm = new MapsForm();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
