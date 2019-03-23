@@ -19,6 +19,16 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+       public class Weapon
+        {
+            private string m_name;
+            private string m_dps;
+            private string m_bulletspeed;
+            private string m_magsize;
+            private string m_timepershot;
+            private string m_ammotype;
+
+        };
         private void buttonBack_Click(object sender, EventArgs e)
         {
             UserChoice frm = new UserChoice();
