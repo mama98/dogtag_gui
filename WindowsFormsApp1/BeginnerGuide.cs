@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsApp1
 {
     public partial class BeginnerGuide : Form
@@ -46,11 +47,5 @@ namespace WindowsFormsApp1
             pictureBoxWeapon.Image = Image.FromFile(filename);
  
         }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-        }
-
-
     }
 }
