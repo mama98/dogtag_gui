@@ -99,8 +99,8 @@
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxHelmetLvl = new System.Windows.Forms.ComboBox();
+            this.comboBoxVestLvl = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -132,8 +132,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.splitContainer1.Panel2.Controls.Add(this.comboBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.comboBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.comboBoxVestLvl);
+            this.splitContainer1.Panel2.Controls.Add(this.comboBoxHelmetLvl);
             this.splitContainer1.Panel2.Controls.Add(this.label21);
             this.splitContainer1.Panel2.Controls.Add(this.label20);
             this.splitContainer1.Panel2.Controls.Add(this.labeVestSTK);
@@ -918,7 +918,7 @@
             this.pictureBoxCharacter.Location = new System.Drawing.Point(35, 58);
             this.pictureBoxCharacter.Name = "pictureBoxCharacter";
             this.pictureBoxCharacter.Size = new System.Drawing.Size(252, 629);
-            this.pictureBoxCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxCharacter.TabIndex = 0;
             this.pictureBoxCharacter.TabStop = false;
             // 
@@ -940,9 +940,9 @@
             // 
             this.lineShapeWeapon.BorderColor = System.Drawing.Color.DarkGray;
             this.lineShapeWeapon.Name = "lineShapeWeapon";
-            this.lineShapeWeapon.X1 = 196;
+            this.lineShapeWeapon.X1 = 166;
             this.lineShapeWeapon.X2 = 392;
-            this.lineShapeWeapon.Y1 = 91;
+            this.lineShapeWeapon.Y1 = 95;
             this.lineShapeWeapon.Y2 = 54;
             // 
             // labelHelmetSTK
@@ -1026,35 +1026,39 @@
             this.label21.Text = "Vest lvl:";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // comboBoxHelmetLvl
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Lvl 0",
-            "Lvl 1",
-            "Lvl 2",
-            "Lvl 3"});
-            this.comboBox1.Location = new System.Drawing.Point(473, 428);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(112, 21);
-            this.comboBox1.TabIndex = 7;
+            this.comboBoxHelmetLvl.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxHelmetLvl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxHelmetLvl.FormattingEnabled = true;
+            this.comboBoxHelmetLvl.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3"});
+            this.comboBoxHelmetLvl.Location = new System.Drawing.Point(473, 428);
+            this.comboBoxHelmetLvl.Name = "comboBoxHelmetLvl";
+            this.comboBoxHelmetLvl.Size = new System.Drawing.Size(112, 21);
+            this.comboBoxHelmetLvl.TabIndex = 7;
+            this.comboBoxHelmetLvl.Text = "0";
+            this.comboBoxHelmetLvl.SelectedIndexChanged += new System.EventHandler(this.comboBoxHelmetLvl_SelectedIndexChanged);
             // 
-            // comboBox2
+            // comboBoxVestLvl
             // 
-            this.comboBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Lvl 0",
-            "Lvl 1",
-            "Lvl 2",
-            "Lvl 3"});
-            this.comboBox2.Location = new System.Drawing.Point(473, 500);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(112, 21);
-            this.comboBox2.TabIndex = 8;
+            this.comboBoxVestLvl.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxVestLvl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxVestLvl.FormattingEnabled = true;
+            this.comboBoxVestLvl.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3"});
+            this.comboBoxVestLvl.Location = new System.Drawing.Point(473, 500);
+            this.comboBoxVestLvl.Name = "comboBoxVestLvl";
+            this.comboBoxVestLvl.Size = new System.Drawing.Size(112, 21);
+            this.comboBoxVestLvl.TabIndex = 8;
+            this.comboBoxVestLvl.Text = "0";
+            this.comboBoxVestLvl.SelectedIndexChanged += new System.EventHandler(this.comboBoxVestLvl_SelectedIndexChanged);
             // 
             // BeginnerGuide
             // 
@@ -1151,8 +1155,8 @@
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShapeWeapon;
         private System.Windows.Forms.Label labelHelmetSTK;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxVestLvl;
+        private System.Windows.Forms.ComboBox comboBoxHelmetLvl;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label labeVestSTK;

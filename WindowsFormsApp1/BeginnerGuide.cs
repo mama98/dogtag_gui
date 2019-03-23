@@ -47,5 +47,23 @@ namespace WindowsFormsApp1
             pictureBoxWeapon.Image = Image.FromFile(filename);
  
         }
+
+        private void comboBoxHelmetLvl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string filename = "../../ArmorImages/";
+
+            filename = filename + comboBoxHelmetLvl.SelectedItem + comboBoxVestLvl.SelectedItem + ".png";
+
+           pictureBoxCharacter.Image = Image.FromFile(filename);
+        }
+
+        private void comboBoxVestLvl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string filename = "../../ArmorImages/";
+
+            filename = filename + comboBoxHelmetLvl.SelectedItem + comboBoxVestLvl.SelectedItem + ".png";
+
+            pictureBoxCharacter.Image = Image.FromFile(filename);
+        }
     }
 }
