@@ -50,5 +50,10 @@ namespace WindowsFormsApp1
             buttonSeason.BackColor = Color.Gray;
             buttonLastGame.BackColor = Color.Gray;
         }
+
+        private void PlayerStats_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -12,30 +12,10 @@ namespace WindowsFormsApp1
 {
     public partial class BeginnerGuide : Form
     {
-
+        
         public BeginnerGuide()
         {
             InitializeComponent();
-        }
-
-        private void buttonErangel_Click(object sender, EventArgs e)
-        {
-            pictureboxMap.Image = Image.FromFile("../../Resources/erangel.jpg");
-        }
-
-        private void buttonMiramar_Click(object sender, EventArgs e)
-        {
-            pictureboxMap.Image = Image.FromFile("../../Resources/miramar.jpg");
-        }
-
-        private void buttonSanhok_Click(object sender, EventArgs e)
-        {
-            pictureboxMap.Image = Image.FromFile("../../Resources/sanhok.jpg");
-        }
-
-        private void buttonVikendi_Click(object sender, EventArgs e)
-        {
-            pictureboxMap.Image = Image.FromFile("../../Resources/vikendi.jpg");
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
@@ -54,5 +34,23 @@ namespace WindowsFormsApp1
         {
             Application.ExitThread(); // Closes the page 
         }
+
+        private void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string caseSwitchWeapon = (string)comboBoxWeapon.SelectedItem;
+
+            string filename = "../../Weapons images/icon_";
+
+            filename= filename+caseSwitchWeapon+".png";
+
+            pictureBoxWeapon.Image = Image.FromFile(filename);
+ 
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+        }
+
+
     }
 }

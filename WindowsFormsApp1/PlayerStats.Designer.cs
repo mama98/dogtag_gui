@@ -17,7 +17,7 @@
             {
                 components.Dispose();
             }
-            base.Dispose(disposing); //Commit test
+            base.Dispose(disposing); //Commit test 
         }
 
         #region Windows Form Designer generated code
@@ -29,6 +29,41 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.labelEnergyDrinks = new System.Windows.Forms.Label();
+            this.labelPainkillers = new System.Windows.Forms.Label();
+            this.labelAdrenalineSyringe = new System.Windows.Forms.Label();
+            this.labelBandages = new System.Windows.Forms.Label();
+            this.labelFirstAids = new System.Windows.Forms.Label();
+            this.labelMedkits = new System.Windows.Forms.Label();
+            this.labelBulletsFiredType2 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.labelBulletsFired2 = new System.Windows.Forms.Label();
+            this.labelBulletsFiredType1 = new System.Windows.Forms.Label();
+            this.labelBulletsFired1 = new System.Windows.Forms.Label();
+            this.labelWeaponChoiceKills = new System.Windows.Forms.Label();
+            this.labelWeaponChoice = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.labelWeapon3 = new System.Windows.Forms.Label();
+            this.labelWeapon2 = new System.Windows.Forms.Label();
+            this.labelWeapon1 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.labelTotalPlayerRank = new System.Windows.Forms.Label();
             this.labelRank = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -56,41 +91,6 @@
             this.buttonLastGame = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.labelWeapon1 = new System.Windows.Forms.Label();
-            this.labelWeapon2 = new System.Windows.Forms.Label();
-            this.labelWeapon3 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.labelWeaponChoice = new System.Windows.Forms.Label();
-            this.labelWeaponChoiceKills = new System.Windows.Forms.Label();
-            this.labelBulletsFired1 = new System.Windows.Forms.Label();
-            this.labelBulletsFiredType1 = new System.Windows.Forms.Label();
-            this.labelBulletsFired2 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.labelBulletsFiredType2 = new System.Windows.Forms.Label();
-            this.labelMedkits = new System.Windows.Forms.Label();
-            this.labelFirstAids = new System.Windows.Forms.Label();
-            this.labelBandages = new System.Windows.Forms.Label();
-            this.labelAdrenalineSyringe = new System.Windows.Forms.Label();
-            this.labelPainkillers = new System.Windows.Forms.Label();
-            this.labelEnergyDrinks = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -162,6 +162,415 @@
             this.panel1.Size = new System.Drawing.Size(1139, 583);
             this.panel1.TabIndex = 0;
             // 
+            // label28
+            // 
+            this.label28.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label28.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.label28.Location = new System.Drawing.Point(351, 486);
+            this.label28.MaximumSize = new System.Drawing.Size(150, 60);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(120, 30);
+            this.label28.TabIndex = 62;
+            this.label28.Text = "2564";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label27
+            // 
+            this.label27.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label27.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.label27.Location = new System.Drawing.Point(372, 459);
+            this.label27.MaximumSize = new System.Drawing.Size(150, 60);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(101, 30);
+            this.label27.TabIndex = 61;
+            this.label27.Text = "13";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelEnergyDrinks
+            // 
+            this.labelEnergyDrinks.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelEnergyDrinks.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelEnergyDrinks.Location = new System.Drawing.Point(795, 486);
+            this.labelEnergyDrinks.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelEnergyDrinks.Name = "labelEnergyDrinks";
+            this.labelEnergyDrinks.Size = new System.Drawing.Size(80, 30);
+            this.labelEnergyDrinks.TabIndex = 60;
+            this.labelEnergyDrinks.Text = "3";
+            this.labelEnergyDrinks.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelPainkillers
+            // 
+            this.labelPainkillers.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelPainkillers.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelPainkillers.Location = new System.Drawing.Point(795, 459);
+            this.labelPainkillers.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelPainkillers.Name = "labelPainkillers";
+            this.labelPainkillers.Size = new System.Drawing.Size(80, 30);
+            this.labelPainkillers.TabIndex = 59;
+            this.labelPainkillers.Text = "2";
+            this.labelPainkillers.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelAdrenalineSyringe
+            // 
+            this.labelAdrenalineSyringe.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelAdrenalineSyringe.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelAdrenalineSyringe.Location = new System.Drawing.Point(795, 432);
+            this.labelAdrenalineSyringe.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelAdrenalineSyringe.Name = "labelAdrenalineSyringe";
+            this.labelAdrenalineSyringe.Size = new System.Drawing.Size(80, 30);
+            this.labelAdrenalineSyringe.TabIndex = 58;
+            this.labelAdrenalineSyringe.Text = "0";
+            this.labelAdrenalineSyringe.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelBandages
+            // 
+            this.labelBandages.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelBandages.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelBandages.Location = new System.Drawing.Point(795, 405);
+            this.labelBandages.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelBandages.Name = "labelBandages";
+            this.labelBandages.Size = new System.Drawing.Size(80, 30);
+            this.labelBandages.TabIndex = 57;
+            this.labelBandages.Text = "10";
+            this.labelBandages.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelFirstAids
+            // 
+            this.labelFirstAids.AutoEllipsis = true;
+            this.labelFirstAids.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelFirstAids.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelFirstAids.Location = new System.Drawing.Point(795, 378);
+            this.labelFirstAids.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelFirstAids.Name = "labelFirstAids";
+            this.labelFirstAids.Size = new System.Drawing.Size(80, 30);
+            this.labelFirstAids.TabIndex = 56;
+            this.labelFirstAids.Text = "4";
+            this.labelFirstAids.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelMedkits
+            // 
+            this.labelMedkits.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelMedkits.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelMedkits.Location = new System.Drawing.Point(795, 351);
+            this.labelMedkits.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelMedkits.Name = "labelMedkits";
+            this.labelMedkits.Size = new System.Drawing.Size(80, 30);
+            this.labelMedkits.TabIndex = 55;
+            this.labelMedkits.Text = "2";
+            this.labelMedkits.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelBulletsFiredType2
+            // 
+            this.labelBulletsFiredType2.AutoSize = true;
+            this.labelBulletsFiredType2.BackColor = System.Drawing.Color.Transparent;
+            this.labelBulletsFiredType2.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelBulletsFiredType2.ForeColor = System.Drawing.Color.DarkOrange;
+            this.labelBulletsFiredType2.Location = new System.Drawing.Point(922, 297);
+            this.labelBulletsFiredType2.Name = "labelBulletsFiredType2";
+            this.labelBulletsFiredType2.Size = new System.Drawing.Size(53, 27);
+            this.labelBulletsFiredType2.TabIndex = 54;
+            this.labelBulletsFiredType2.Text = "7.62";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.Transparent;
+            this.label32.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label32.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label32.Location = new System.Drawing.Point(901, 297);
+            this.label32.Margin = new System.Windows.Forms.Padding(0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(18, 27);
+            this.label32.TabIndex = 53;
+            this.label32.Text = "-";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label30.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label30.Location = new System.Drawing.Point(895, 243);
+            this.label30.Margin = new System.Windows.Forms.Padding(0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(18, 27);
+            this.label30.TabIndex = 52;
+            this.label30.Text = "-";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label31.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label31.Location = new System.Drawing.Point(901, 270);
+            this.label31.Margin = new System.Windows.Forms.Padding(0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(18, 27);
+            this.label31.TabIndex = 51;
+            this.label31.Text = "-";
+            // 
+            // labelBulletsFired2
+            // 
+            this.labelBulletsFired2.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelBulletsFired2.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelBulletsFired2.Location = new System.Drawing.Point(800, 297);
+            this.labelBulletsFired2.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelBulletsFired2.Name = "labelBulletsFired2";
+            this.labelBulletsFired2.Size = new System.Drawing.Size(102, 30);
+            this.labelBulletsFired2.TabIndex = 49;
+            this.labelBulletsFired2.Text = "13";
+            this.labelBulletsFired2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelBulletsFiredType1
+            // 
+            this.labelBulletsFiredType1.AutoSize = true;
+            this.labelBulletsFiredType1.BackColor = System.Drawing.Color.Transparent;
+            this.labelBulletsFiredType1.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelBulletsFiredType1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.labelBulletsFiredType1.Location = new System.Drawing.Point(922, 270);
+            this.labelBulletsFiredType1.Name = "labelBulletsFiredType1";
+            this.labelBulletsFiredType1.Size = new System.Drawing.Size(53, 27);
+            this.labelBulletsFiredType1.TabIndex = 48;
+            this.labelBulletsFiredType1.Text = "5.56";
+            // 
+            // labelBulletsFired1
+            // 
+            this.labelBulletsFired1.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelBulletsFired1.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelBulletsFired1.Location = new System.Drawing.Point(800, 270);
+            this.labelBulletsFired1.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelBulletsFired1.Name = "labelBulletsFired1";
+            this.labelBulletsFired1.Size = new System.Drawing.Size(102, 30);
+            this.labelBulletsFired1.TabIndex = 47;
+            this.labelBulletsFired1.Text = "352";
+            this.labelBulletsFired1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelWeaponChoiceKills
+            // 
+            this.labelWeaponChoiceKills.AutoSize = true;
+            this.labelWeaponChoiceKills.BackColor = System.Drawing.Color.Transparent;
+            this.labelWeaponChoiceKills.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelWeaponChoiceKills.ForeColor = System.Drawing.Color.DarkOrange;
+            this.labelWeaponChoiceKills.Location = new System.Drawing.Point(908, 243);
+            this.labelWeaponChoiceKills.Name = "labelWeaponChoiceKills";
+            this.labelWeaponChoiceKills.Size = new System.Drawing.Size(78, 27);
+            this.labelWeaponChoiceKills.TabIndex = 46;
+            this.labelWeaponChoiceKills.Text = "11 kills";
+            // 
+            // labelWeaponChoice
+            // 
+            this.labelWeaponChoice.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelWeaponChoice.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelWeaponChoice.Location = new System.Drawing.Point(816, 240);
+            this.labelWeaponChoice.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelWeaponChoice.Name = "labelWeaponChoice";
+            this.labelWeaponChoice.Size = new System.Drawing.Size(80, 30);
+            this.labelWeaponChoice.TabIndex = 45;
+            this.labelWeaponChoice.Text = "M416";
+            this.labelWeaponChoice.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label26.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label26.Location = new System.Drawing.Point(37, 486);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(153, 27);
+            this.label26.TabIndex = 44;
+            this.label26.Text = "Team Damage";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label25.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label25.Location = new System.Drawing.Point(37, 459);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(112, 27);
+            this.label25.TabIndex = 43;
+            this.label25.Text = "Team Kills";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Roboto Light", 26F);
+            this.label24.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label24.Location = new System.Drawing.Point(35, 405);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(105, 42);
+            this.label24.TabIndex = 42;
+            this.label24.Text = "Team";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label23.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label23.Location = new System.Drawing.Point(545, 486);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(142, 27);
+            this.label23.TabIndex = 41;
+            this.label23.Text = "Energy Drinks";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label22.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label22.Location = new System.Drawing.Point(545, 459);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(110, 27);
+            this.label22.TabIndex = 40;
+            this.label22.Text = "Painkillers";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label21.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label21.Location = new System.Drawing.Point(545, 432);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(188, 27);
+            this.label21.TabIndex = 39;
+            this.label21.Text = "Adrenaline Syringe";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label20.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label20.Location = new System.Drawing.Point(545, 405);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(107, 27);
+            this.label20.TabIndex = 38;
+            this.label20.Text = "Bandages";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label19.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label19.Location = new System.Drawing.Point(545, 378);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(132, 27);
+            this.label19.TabIndex = 37;
+            this.label19.Text = "First Aid Kits";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label18.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label18.Location = new System.Drawing.Point(545, 351);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(88, 27);
+            this.label18.TabIndex = 36;
+            this.label18.Text = "Medkits";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label17.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label17.Location = new System.Drawing.Point(545, 270);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(128, 27);
+            this.label17.TabIndex = 35;
+            this.label17.Text = "Bullets Fired";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label16.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label16.Location = new System.Drawing.Point(545, 243);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(185, 27);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "Weapon of Choice";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label15.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.label15.Location = new System.Drawing.Point(1013, 189);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(16, 27);
+            this.label15.TabIndex = 33;
+            this.label15.Text = ",";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label13.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.label13.Location = new System.Drawing.Point(871, 189);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(16, 27);
+            this.label13.TabIndex = 32;
+            this.label13.Text = ",";
+            // 
+            // labelWeapon3
+            // 
+            this.labelWeapon3.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelWeapon3.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelWeapon3.Location = new System.Drawing.Point(1030, 186);
+            this.labelWeapon3.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelWeapon3.Name = "labelWeapon3";
+            this.labelWeapon3.Size = new System.Drawing.Size(89, 30);
+            this.labelWeapon3.TabIndex = 31;
+            this.labelWeapon3.Text = "P92";
+            this.labelWeapon3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelWeapon2
+            // 
+            this.labelWeapon2.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelWeapon2.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelWeapon2.Location = new System.Drawing.Point(893, 186);
+            this.labelWeapon2.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelWeapon2.Name = "labelWeapon2";
+            this.labelWeapon2.Size = new System.Drawing.Size(114, 30);
+            this.labelWeapon2.TabIndex = 30;
+            this.labelWeapon2.Text = "Kar-98";
+            this.labelWeapon2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelWeapon1
+            // 
+            this.labelWeapon1.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelWeapon1.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelWeapon1.Location = new System.Drawing.Point(753, 186);
+            this.labelWeapon1.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelWeapon1.Name = "labelWeapon1";
+            this.labelWeapon1.Size = new System.Drawing.Size(112, 30);
+            this.labelWeapon1.TabIndex = 29;
+            this.labelWeapon1.Text = "M416";
+            this.labelWeapon1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label12.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label12.Location = new System.Drawing.Point(545, 189);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(91, 27);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Loadout";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Roboto Light", 26F);
+            this.label9.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label9.Location = new System.Drawing.Point(543, 133);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(105, 42);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Items";
+            // 
             // labelTotalPlayerRank
             // 
             this.labelTotalPlayerRank.AutoSize = true;
@@ -191,7 +600,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.label11.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label11.Location = new System.Drawing.Point(435, 351);
+            this.label11.Location = new System.Drawing.Point(420, 351);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(43, 27);
             this.label11.TabIndex = 24;
@@ -203,7 +612,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label10.Location = new System.Drawing.Point(446, 324);
+            this.label10.Location = new System.Drawing.Point(441, 324);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(23, 27);
             this.label10.TabIndex = 23;
@@ -214,7 +623,7 @@
             this.labelTimeSec.AutoSize = true;
             this.labelTimeSec.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.labelTimeSec.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelTimeSec.Location = new System.Drawing.Point(415, 324);
+            this.labelTimeSec.Location = new System.Drawing.Point(410, 324);
             this.labelTimeSec.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelTimeSec.MaximumSize = new System.Drawing.Size(100, 0);
             this.labelTimeSec.Name = "labelTimeSec";
@@ -228,7 +637,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.label8.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label8.Location = new System.Drawing.Point(372, 324);
+            this.label8.Location = new System.Drawing.Point(367, 324);
             this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 27);
@@ -240,7 +649,7 @@
             this.labelTimeMin.AutoSize = true;
             this.labelTimeMin.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.labelTimeMin.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelTimeMin.Location = new System.Drawing.Point(342, 324);
+            this.labelTimeMin.Location = new System.Drawing.Point(337, 324);
             this.labelTimeMin.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labelTimeMin.MaximumSize = new System.Drawing.Size(100, 0);
             this.labelTimeMin.Name = "labelTimeMin";
@@ -254,7 +663,7 @@
             this.labelTotalPlayerKillRank.BackColor = System.Drawing.Color.Transparent;
             this.labelTotalPlayerKillRank.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.labelTotalPlayerKillRank.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelTotalPlayerKillRank.Location = new System.Drawing.Point(435, 216);
+            this.labelTotalPlayerKillRank.Location = new System.Drawing.Point(420, 216);
             this.labelTotalPlayerKillRank.Name = "labelTotalPlayerKillRank";
             this.labelTotalPlayerKillRank.Size = new System.Drawing.Size(45, 27);
             this.labelTotalPlayerKillRank.TabIndex = 19;
@@ -262,25 +671,27 @@
             // 
             // labelKillRank
             // 
-            this.labelKillRank.AutoSize = true;
             this.labelKillRank.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.labelKillRank.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelKillRank.Location = new System.Drawing.Point(417, 216);
+            this.labelKillRank.Location = new System.Drawing.Point(346, 216);
+            this.labelKillRank.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelKillRank.Name = "labelKillRank";
-            this.labelKillRank.Size = new System.Drawing.Size(24, 27);
+            this.labelKillRank.Size = new System.Drawing.Size(80, 30);
             this.labelKillRank.TabIndex = 18;
             this.labelKillRank.Text = "1";
+            this.labelKillRank.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelDistance
             // 
-            this.labelDistance.AutoSize = true;
             this.labelDistance.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.labelDistance.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelDistance.Location = new System.Drawing.Point(400, 351);
+            this.labelDistance.Location = new System.Drawing.Point(345, 351);
+            this.labelDistance.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelDistance.Name = "labelDistance";
-            this.labelDistance.Size = new System.Drawing.Size(41, 27);
+            this.labelDistance.Size = new System.Drawing.Size(80, 30);
             this.labelDistance.TabIndex = 17;
             this.labelDistance.Text = "7.8";
+            this.labelDistance.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label14
             // 
@@ -295,48 +706,51 @@
             // 
             // labelDamage
             // 
-            this.labelDamage.AutoSize = true;
             this.labelDamage.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.labelDamage.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelDamage.Location = new System.Drawing.Point(411, 297);
-            this.labelDamage.MaximumSize = new System.Drawing.Size(100, 0);
+            this.labelDamage.Location = new System.Drawing.Point(383, 297);
+            this.labelDamage.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelDamage.Name = "labelDamage";
-            this.labelDamage.Size = new System.Drawing.Size(60, 27);
+            this.labelDamage.Size = new System.Drawing.Size(80, 30);
             this.labelDamage.TabIndex = 14;
             this.labelDamage.Text = "1960";
+            this.labelDamage.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelHeadshots
             // 
-            this.labelHeadshots.AutoSize = true;
             this.labelHeadshots.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.labelHeadshots.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelHeadshots.Location = new System.Drawing.Point(447, 270);
+            this.labelHeadshots.Location = new System.Drawing.Point(383, 270);
+            this.labelHeadshots.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelHeadshots.Name = "labelHeadshots";
-            this.labelHeadshots.Size = new System.Drawing.Size(24, 27);
+            this.labelHeadshots.Size = new System.Drawing.Size(80, 30);
             this.labelHeadshots.TabIndex = 13;
             this.labelHeadshots.Text = "9";
+            this.labelHeadshots.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelDBNO
             // 
-            this.labelDBNO.AutoSize = true;
             this.labelDBNO.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.labelDBNO.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelDBNO.Location = new System.Drawing.Point(435, 243);
+            this.labelDBNO.Location = new System.Drawing.Point(383, 243);
+            this.labelDBNO.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelDBNO.Name = "labelDBNO";
-            this.labelDBNO.Size = new System.Drawing.Size(36, 27);
+            this.labelDBNO.Size = new System.Drawing.Size(80, 30);
             this.labelDBNO.TabIndex = 12;
             this.labelDBNO.Text = "14";
+            this.labelDBNO.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelKills
             // 
-            this.labelKills.AutoSize = true;
             this.labelKills.Font = new System.Drawing.Font("Roboto Light", 16F);
             this.labelKills.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelKills.Location = new System.Drawing.Point(447, 189);
+            this.labelKills.Location = new System.Drawing.Point(383, 186);
+            this.labelKills.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelKills.Name = "labelKills";
-            this.labelKills.Size = new System.Drawing.Size(24, 27);
+            this.labelKills.Size = new System.Drawing.Size(80, 30);
             this.labelKills.TabIndex = 10;
             this.labelKills.Text = "9";
+            this.labelKills.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label7
             // 
@@ -471,7 +885,7 @@
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBack.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonBack.Location = new System.Drawing.Point(1, 0);
+            this.buttonBack.Location = new System.Drawing.Point(0, 0);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(92, 42);
             this.buttonBack.TabIndex = 7;
@@ -489,401 +903,6 @@
             this.panel2.Size = new System.Drawing.Size(171, 89);
             this.panel2.TabIndex = 3;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Roboto Light", 26F);
-            this.label9.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label9.Location = new System.Drawing.Point(543, 133);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 42);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "Items";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label12.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label12.Location = new System.Drawing.Point(545, 189);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(91, 27);
-            this.label12.TabIndex = 28;
-            this.label12.Text = "Loadout";
-            // 
-            // labelWeapon1
-            // 
-            this.labelWeapon1.AutoSize = true;
-            this.labelWeapon1.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelWeapon1.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelWeapon1.Location = new System.Drawing.Point(835, 189);
-            this.labelWeapon1.Name = "labelWeapon1";
-            this.labelWeapon1.Size = new System.Drawing.Size(67, 27);
-            this.labelWeapon1.TabIndex = 29;
-            this.labelWeapon1.Text = "M416";
-            // 
-            // labelWeapon2
-            // 
-            this.labelWeapon2.AutoSize = true;
-            this.labelWeapon2.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelWeapon2.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelWeapon2.Location = new System.Drawing.Point(927, 189);
-            this.labelWeapon2.Name = "labelWeapon2";
-            this.labelWeapon2.Size = new System.Drawing.Size(75, 27);
-            this.labelWeapon2.TabIndex = 30;
-            this.labelWeapon2.Text = "Kar-98";
-            // 
-            // labelWeapon3
-            // 
-            this.labelWeapon3.AutoSize = true;
-            this.labelWeapon3.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelWeapon3.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelWeapon3.Location = new System.Drawing.Point(1030, 189);
-            this.labelWeapon3.Name = "labelWeapon3";
-            this.labelWeapon3.Size = new System.Drawing.Size(50, 27);
-            this.labelWeapon3.TabIndex = 31;
-            this.labelWeapon3.Text = "P92";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label13.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.label13.Location = new System.Drawing.Point(905, 189);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(16, 27);
-            this.label13.TabIndex = 32;
-            this.label13.Text = ",";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label15.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.label15.Location = new System.Drawing.Point(1008, 189);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(16, 27);
-            this.label15.TabIndex = 33;
-            this.label15.Text = ",";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label16.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label16.Location = new System.Drawing.Point(545, 243);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(185, 27);
-            this.label16.TabIndex = 34;
-            this.label16.Text = "Weapon of Choice";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label17.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label17.Location = new System.Drawing.Point(545, 270);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(128, 27);
-            this.label17.TabIndex = 35;
-            this.label17.Text = "Bullets Fired";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label18.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label18.Location = new System.Drawing.Point(545, 351);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(88, 27);
-            this.label18.TabIndex = 36;
-            this.label18.Text = "Medkits";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label19.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label19.Location = new System.Drawing.Point(545, 378);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(132, 27);
-            this.label19.TabIndex = 37;
-            this.label19.Text = "First Aid Kits";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label20.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label20.Location = new System.Drawing.Point(545, 405);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(107, 27);
-            this.label20.TabIndex = 38;
-            this.label20.Text = "Bandages";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label21.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label21.Location = new System.Drawing.Point(545, 432);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(188, 27);
-            this.label21.TabIndex = 39;
-            this.label21.Text = "Adrenaline Syringe";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label22.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label22.Location = new System.Drawing.Point(545, 459);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(110, 27);
-            this.label22.TabIndex = 40;
-            this.label22.Text = "Painkillers";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label23.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label23.Location = new System.Drawing.Point(545, 486);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(142, 27);
-            this.label23.TabIndex = 41;
-            this.label23.Text = "Energy Drinks";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Roboto Light", 26F);
-            this.label24.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label24.Location = new System.Drawing.Point(35, 405);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(105, 42);
-            this.label24.TabIndex = 42;
-            this.label24.Text = "Team";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label25.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label25.Location = new System.Drawing.Point(37, 459);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(112, 27);
-            this.label25.TabIndex = 43;
-            this.label25.Text = "Team Kills";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label26.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label26.Location = new System.Drawing.Point(37, 486);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(153, 27);
-            this.label26.TabIndex = 44;
-            this.label26.Text = "Team Damage";
-            // 
-            // labelWeaponChoice
-            // 
-            this.labelWeaponChoice.AutoSize = true;
-            this.labelWeaponChoice.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelWeaponChoice.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelWeaponChoice.Location = new System.Drawing.Point(835, 243);
-            this.labelWeaponChoice.Name = "labelWeaponChoice";
-            this.labelWeaponChoice.Size = new System.Drawing.Size(67, 27);
-            this.labelWeaponChoice.TabIndex = 45;
-            this.labelWeaponChoice.Text = "M416";
-            // 
-            // labelWeaponChoiceKills
-            // 
-            this.labelWeaponChoiceKills.AutoSize = true;
-            this.labelWeaponChoiceKills.BackColor = System.Drawing.Color.Transparent;
-            this.labelWeaponChoiceKills.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelWeaponChoiceKills.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelWeaponChoiceKills.Location = new System.Drawing.Point(908, 243);
-            this.labelWeaponChoiceKills.Name = "labelWeaponChoiceKills";
-            this.labelWeaponChoiceKills.Size = new System.Drawing.Size(78, 27);
-            this.labelWeaponChoiceKills.TabIndex = 46;
-            this.labelWeaponChoiceKills.Text = "11 kills";
-            // 
-            // labelBulletsFired1
-            // 
-            this.labelBulletsFired1.AutoSize = true;
-            this.labelBulletsFired1.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelBulletsFired1.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelBulletsFired1.Location = new System.Drawing.Point(835, 270);
-            this.labelBulletsFired1.Name = "labelBulletsFired1";
-            this.labelBulletsFired1.Size = new System.Drawing.Size(48, 27);
-            this.labelBulletsFired1.TabIndex = 47;
-            this.labelBulletsFired1.Text = "352";
-            // 
-            // labelBulletsFiredType1
-            // 
-            this.labelBulletsFiredType1.AutoSize = true;
-            this.labelBulletsFiredType1.BackColor = System.Drawing.Color.Transparent;
-            this.labelBulletsFiredType1.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelBulletsFiredType1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelBulletsFiredType1.Location = new System.Drawing.Point(895, 270);
-            this.labelBulletsFiredType1.Name = "labelBulletsFiredType1";
-            this.labelBulletsFiredType1.Size = new System.Drawing.Size(53, 27);
-            this.labelBulletsFiredType1.TabIndex = 48;
-            this.labelBulletsFiredType1.Text = "5.56";
-            // 
-            // labelBulletsFired2
-            // 
-            this.labelBulletsFired2.AutoSize = true;
-            this.labelBulletsFired2.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelBulletsFired2.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelBulletsFired2.Location = new System.Drawing.Point(835, 297);
-            this.labelBulletsFired2.Name = "labelBulletsFired2";
-            this.labelBulletsFired2.Size = new System.Drawing.Size(36, 27);
-            this.labelBulletsFired2.TabIndex = 49;
-            this.labelBulletsFired2.Text = "13";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label31.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label31.Location = new System.Drawing.Point(874, 270);
-            this.label31.Margin = new System.Windows.Forms.Padding(0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(18, 27);
-            this.label31.TabIndex = 51;
-            this.label31.Text = "-";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label30.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label30.Location = new System.Drawing.Point(895, 243);
-            this.label30.Margin = new System.Windows.Forms.Padding(0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(18, 27);
-            this.label30.TabIndex = 52;
-            this.label30.Text = "-";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.Transparent;
-            this.label32.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label32.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label32.Location = new System.Drawing.Point(874, 297);
-            this.label32.Margin = new System.Windows.Forms.Padding(0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(18, 27);
-            this.label32.TabIndex = 53;
-            this.label32.Text = "-";
-            // 
-            // labelBulletsFiredType2
-            // 
-            this.labelBulletsFiredType2.AutoSize = true;
-            this.labelBulletsFiredType2.BackColor = System.Drawing.Color.Transparent;
-            this.labelBulletsFiredType2.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelBulletsFiredType2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelBulletsFiredType2.Location = new System.Drawing.Point(895, 297);
-            this.labelBulletsFiredType2.Name = "labelBulletsFiredType2";
-            this.labelBulletsFiredType2.Size = new System.Drawing.Size(53, 27);
-            this.labelBulletsFiredType2.TabIndex = 54;
-            this.labelBulletsFiredType2.Text = "7.62";
-            // 
-            // labelMedkits
-            // 
-            this.labelMedkits.AutoSize = true;
-            this.labelMedkits.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelMedkits.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelMedkits.Location = new System.Drawing.Point(835, 351);
-            this.labelMedkits.Name = "labelMedkits";
-            this.labelMedkits.Size = new System.Drawing.Size(24, 27);
-            this.labelMedkits.TabIndex = 55;
-            this.labelMedkits.Text = "2";
-            // 
-            // labelFirstAids
-            // 
-            this.labelFirstAids.AutoEllipsis = true;
-            this.labelFirstAids.AutoSize = true;
-            this.labelFirstAids.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelFirstAids.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelFirstAids.Location = new System.Drawing.Point(835, 378);
-            this.labelFirstAids.Name = "labelFirstAids";
-            this.labelFirstAids.Size = new System.Drawing.Size(24, 27);
-            this.labelFirstAids.TabIndex = 56;
-            this.labelFirstAids.Text = "4";
-            // 
-            // labelBandages
-            // 
-            this.labelBandages.AutoSize = true;
-            this.labelBandages.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelBandages.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelBandages.Location = new System.Drawing.Point(835, 405);
-            this.labelBandages.Name = "labelBandages";
-            this.labelBandages.Size = new System.Drawing.Size(36, 27);
-            this.labelBandages.TabIndex = 57;
-            this.labelBandages.Text = "10";
-            // 
-            // labelAdrenalineSyringe
-            // 
-            this.labelAdrenalineSyringe.AutoSize = true;
-            this.labelAdrenalineSyringe.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelAdrenalineSyringe.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelAdrenalineSyringe.Location = new System.Drawing.Point(835, 432);
-            this.labelAdrenalineSyringe.Name = "labelAdrenalineSyringe";
-            this.labelAdrenalineSyringe.Size = new System.Drawing.Size(24, 27);
-            this.labelAdrenalineSyringe.TabIndex = 58;
-            this.labelAdrenalineSyringe.Text = "0";
-            // 
-            // labelPainkillers
-            // 
-            this.labelPainkillers.AutoSize = true;
-            this.labelPainkillers.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelPainkillers.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelPainkillers.Location = new System.Drawing.Point(835, 459);
-            this.labelPainkillers.Name = "labelPainkillers";
-            this.labelPainkillers.Size = new System.Drawing.Size(24, 27);
-            this.labelPainkillers.TabIndex = 59;
-            this.labelPainkillers.Text = "2";
-            // 
-            // labelEnergyDrinks
-            // 
-            this.labelEnergyDrinks.AutoSize = true;
-            this.labelEnergyDrinks.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.labelEnergyDrinks.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelEnergyDrinks.Location = new System.Drawing.Point(835, 486);
-            this.labelEnergyDrinks.Name = "labelEnergyDrinks";
-            this.labelEnergyDrinks.Size = new System.Drawing.Size(24, 27);
-            this.labelEnergyDrinks.TabIndex = 60;
-            this.labelEnergyDrinks.Text = "3";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label27.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.label27.Location = new System.Drawing.Point(433, 459);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(36, 27);
-            this.label27.TabIndex = 61;
-            this.label27.Text = "13";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Roboto Light", 16F);
-            this.label28.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.label28.Location = new System.Drawing.Point(403, 486);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(60, 27);
-            this.label28.TabIndex = 62;
-            this.label28.Text = "2564";
-            // 
             // PlayerStats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -896,6 +915,7 @@
             this.Name = "PlayerStats";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PlayerStats_FormClosing);
+            this.Load += new System.EventHandler(this.PlayerStats_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
