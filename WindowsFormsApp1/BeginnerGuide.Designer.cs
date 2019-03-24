@@ -927,6 +927,7 @@
             this.comboBoxVestLvl.TabIndex = 8;
             this.comboBoxVestLvl.Text = "0";
             this.comboBoxVestLvl.SelectedIndexChanged += new System.EventHandler(this.comboBoxVestLvl_SelectedIndexChanged);
+            this.comboBoxVestLvl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxVestLvl_KeyPress);
             // 
             // comboBoxHelmetLvl
             // 
@@ -944,6 +945,7 @@
             this.comboBoxHelmetLvl.TabIndex = 7;
             this.comboBoxHelmetLvl.Text = "0";
             this.comboBoxHelmetLvl.SelectedIndexChanged += new System.EventHandler(this.comboBoxHelmetLvl_SelectedIndexChanged);
+            this.comboBoxHelmetLvl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxHelmetLvl_KeyPress);
             // 
             // label21
             // 

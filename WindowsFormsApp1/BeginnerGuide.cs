@@ -58,6 +58,7 @@ namespace WindowsFormsApp1
  
         }
 
+
         private void comboBoxHelmetLvl_SelectedIndexChanged(object sender, EventArgs e)
         {
             string filename = "../../ArmorImages/";
@@ -110,6 +111,14 @@ namespace WindowsFormsApp1
                 default:
                     break;
             }
+        }
+        private void comboBoxHelmetLvl_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+        private void comboBoxVestLvl_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }
