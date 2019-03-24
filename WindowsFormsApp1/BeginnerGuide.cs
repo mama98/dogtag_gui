@@ -63,8 +63,26 @@ namespace WindowsFormsApp1
             string filename = "../../ArmorImages/";
 
             filename = filename + comboBoxHelmetLvl.SelectedItem + comboBoxVestLvl.SelectedItem + ".png";
-
+             
            pictureBoxCharacter.Image = Image.FromFile(filename);
+
+            switch(comboBoxHelmetLvl.SelectedItem)
+            {
+                case "0":
+                    labelHelmetSTK.Text ="1";
+                    break;
+                case "1":
+                    labelHelmetSTK.Text = "2";
+                    break;
+                case "2":
+                    labelHelmetSTK.Text = "2";
+                    break;
+                case "3":
+                    labelHelmetSTK.Text = "3";
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void comboBoxVestLvl_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,6 +92,24 @@ namespace WindowsFormsApp1
             filename = filename + comboBoxHelmetLvl.SelectedItem + comboBoxVestLvl.SelectedItem + ".png";
 
             pictureBoxCharacter.Image = Image.FromFile(filename);
+
+            switch (comboBoxVestLvl.SelectedItem)
+            {
+                case "0":
+                    labelVestSTK.Text = "3";
+                    break;
+                case "1":
+                    labelVestSTK.Text = "4";
+                    break;
+                case "2":
+                    labelVestSTK.Text = "5";
+                    break;
+                case "3":
+                    labelVestSTK.Text = "6";
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

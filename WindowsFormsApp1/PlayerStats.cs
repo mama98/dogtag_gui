@@ -55,5 +55,51 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void buttonTPP_Click(object sender, EventArgs e)
+        {
+            buttonTPP.BackColor = Color.FromName("WindowFrame");
+            buttonTPP.FlatAppearance.BorderColor = Color.DarkOrange;
+            buttonFPP.FlatAppearance.BorderColor = Color.Black;
+            buttonFPP.BackColor = Color.Gray;
+        }
+
+        private void buttonFPP_Click(object sender, EventArgs e)
+        {
+            buttonFPP.BackColor = Color.FromName("WindowFrame");
+            buttonFPP.FlatAppearance.BorderColor = Color.DarkOrange;
+            buttonTPP.FlatAppearance.BorderColor = Color.Black;
+            buttonTPP.BackColor = Color.Gray;
+        }
+
+        private void buttonSolo_Click(object sender, EventArgs e)
+        {
+            buttonSolo.BackColor = Color.FromName("WindowFrame");
+            buttonSolo.FlatAppearance.BorderColor = Color.DarkOrange;
+            buttonDuo.FlatAppearance.BorderColor = Color.Black;
+            buttonDuo.BackColor = Color.Gray;
+            buttonSquad.FlatAppearance.BorderColor = Color.Black;
+            buttonSquad.BackColor = Color.Gray;
+        }
+
+        private void buttonDuo_Click(object sender, EventArgs e)
+        {
+            buttonDuo.BackColor = Color.FromName("WindowFrame");
+            buttonDuo.FlatAppearance.BorderColor = Color.DarkOrange;
+            buttonSolo.FlatAppearance.BorderColor = Color.Black;
+            buttonSolo.BackColor = Color.Gray;
+            buttonSquad.FlatAppearance.BorderColor = Color.Black;
+            buttonSquad.BackColor = Color.Gray;
+        }
+
+        private void buttonSquad_Click(object sender, EventArgs e)
+        {
+            buttonSquad.BackColor = Color.FromName("WindowFrame");
+            buttonSquad.FlatAppearance.BorderColor = Color.DarkOrange;
+            buttonDuo.FlatAppearance.BorderColor = Color.Black;
+            buttonDuo.BackColor = Color.Gray;
+            buttonSolo.FlatAppearance.BorderColor = Color.Black;
+            buttonSolo.BackColor = Color.Gray;
+        }
     }
 }

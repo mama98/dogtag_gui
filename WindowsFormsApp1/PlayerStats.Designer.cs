@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.labelEnergyDrinks = new System.Windows.Forms.Label();
@@ -90,13 +91,22 @@
             this.buttonSeason = new System.Windows.Forms.Button();
             this.buttonLastGame = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonTPP = new System.Windows.Forms.Button();
+            this.buttonFPP = new System.Windows.Forms.Button();
+            this.buttonSolo = new System.Windows.Forms.Button();
+            this.buttonDuo = new System.Windows.Forms.Button();
+            this.buttonSquad = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.panel1.Controls.Add(this.buttonSquad);
+            this.panel1.Controls.Add(this.buttonDuo);
+            this.panel1.Controls.Add(this.buttonSolo);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label28);
             this.panel1.Controls.Add(this.label27);
             this.panel1.Controls.Add(this.labelEnergyDrinks);
@@ -159,8 +169,19 @@
             this.panel1.Controls.Add(this.buttonLastGame);
             this.panel1.Location = new System.Drawing.Point(73, 60);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1139, 583);
+            this.panel1.Size = new System.Drawing.Size(1141, 583);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.buttonFPP);
+            this.panel2.Controls.Add(this.buttonTPP);
+            this.panel2.Location = new System.Drawing.Point(968, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(171, 63);
+            this.panel2.TabIndex = 3;
             // 
             // label28
             // 
@@ -839,7 +860,7 @@
             this.buttonAllTime.ForeColor = System.Drawing.Color.DarkOrange;
             this.buttonAllTime.Location = new System.Drawing.Point(654, 0);
             this.buttonAllTime.Name = "buttonAllTime";
-            this.buttonAllTime.Size = new System.Drawing.Size(321, 89);
+            this.buttonAllTime.Size = new System.Drawing.Size(321, 63);
             this.buttonAllTime.TabIndex = 2;
             this.buttonAllTime.Text = "All-Time";
             this.buttonAllTime.UseVisualStyleBackColor = false;
@@ -855,7 +876,7 @@
             this.buttonSeason.ForeColor = System.Drawing.Color.DarkOrange;
             this.buttonSeason.Location = new System.Drawing.Point(327, 0);
             this.buttonSeason.Name = "buttonSeason";
-            this.buttonSeason.Size = new System.Drawing.Size(321, 89);
+            this.buttonSeason.Size = new System.Drawing.Size(321, 63);
             this.buttonSeason.TabIndex = 1;
             this.buttonSeason.Text = "This Season";
             this.buttonSeason.UseVisualStyleBackColor = false;
@@ -871,7 +892,7 @@
             this.buttonLastGame.ForeColor = System.Drawing.Color.DarkOrange;
             this.buttonLastGame.Location = new System.Drawing.Point(0, 0);
             this.buttonLastGame.Name = "buttonLastGame";
-            this.buttonLastGame.Size = new System.Drawing.Size(321, 89);
+            this.buttonLastGame.Size = new System.Drawing.Size(321, 63);
             this.buttonLastGame.TabIndex = 0;
             this.buttonLastGame.Text = "Last Game";
             this.buttonLastGame.UseVisualStyleBackColor = false;
@@ -894,14 +915,82 @@
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // panel2
+            // buttonTPP
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Location = new System.Drawing.Point(1041, 60);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(171, 89);
-            this.panel2.TabIndex = 3;
+            this.buttonTPP.BackColor = System.Drawing.Color.Gray;
+            this.buttonTPP.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuText;
+            this.buttonTPP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTPP.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTPP.ForeColor = System.Drawing.Color.White;
+            this.buttonTPP.Location = new System.Drawing.Point(0, 0);
+            this.buttonTPP.Name = "buttonTPP";
+            this.buttonTPP.Size = new System.Drawing.Size(89, 63);
+            this.buttonTPP.TabIndex = 0;
+            this.buttonTPP.Text = "TPP";
+            this.buttonTPP.UseVisualStyleBackColor = false;
+            this.buttonTPP.Click += new System.EventHandler(this.buttonTPP_Click);
+            // 
+            // buttonFPP
+            // 
+            this.buttonFPP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonFPP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFPP.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFPP.ForeColor = System.Drawing.Color.White;
+            this.buttonFPP.Location = new System.Drawing.Point(89, 0);
+            this.buttonFPP.Name = "buttonFPP";
+            this.buttonFPP.Size = new System.Drawing.Size(82, 63);
+            this.buttonFPP.TabIndex = 1;
+            this.buttonFPP.Text = "FPP";
+            this.buttonFPP.UseVisualStyleBackColor = true;
+            this.buttonFPP.Click += new System.EventHandler(this.buttonFPP_Click);
+            // 
+            // buttonSolo
+            // 
+            this.buttonSolo.BackColor = System.Drawing.Color.Gray;
+            this.buttonSolo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonSolo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSolo.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSolo.ForeColor = System.Drawing.Color.White;
+            this.buttonSolo.Location = new System.Drawing.Point(900, 75);
+            this.buttonSolo.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonSolo.Name = "buttonSolo";
+            this.buttonSolo.Size = new System.Drawing.Size(79, 40);
+            this.buttonSolo.TabIndex = 63;
+            this.buttonSolo.Text = "Solo";
+            this.buttonSolo.UseVisualStyleBackColor = false;
+            this.buttonSolo.Click += new System.EventHandler(this.buttonSolo_Click);
+            // 
+            // buttonDuo
+            // 
+            this.buttonDuo.BackColor = System.Drawing.Color.Gray;
+            this.buttonDuo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonDuo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDuo.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDuo.ForeColor = System.Drawing.Color.White;
+            this.buttonDuo.Location = new System.Drawing.Point(978, 75);
+            this.buttonDuo.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonDuo.Name = "buttonDuo";
+            this.buttonDuo.Size = new System.Drawing.Size(79, 40);
+            this.buttonDuo.TabIndex = 64;
+            this.buttonDuo.Text = "Duo";
+            this.buttonDuo.UseVisualStyleBackColor = false;
+            this.buttonDuo.Click += new System.EventHandler(this.buttonDuo_Click);
+            // 
+            // buttonSquad
+            // 
+            this.buttonSquad.BackColor = System.Drawing.Color.Gray;
+            this.buttonSquad.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonSquad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSquad.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSquad.ForeColor = System.Drawing.Color.White;
+            this.buttonSquad.Location = new System.Drawing.Point(1055, 75);
+            this.buttonSquad.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonSquad.Name = "buttonSquad";
+            this.buttonSquad.Size = new System.Drawing.Size(79, 40);
+            this.buttonSquad.TabIndex = 65;
+            this.buttonSquad.Text = "Squad";
+            this.buttonSquad.UseVisualStyleBackColor = false;
+            this.buttonSquad.Click += new System.EventHandler(this.buttonSquad_Click);
             // 
             // PlayerStats
             // 
@@ -909,7 +998,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1284, 696);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.panel1);
             this.Name = "PlayerStats";
@@ -918,6 +1006,7 @@
             this.Load += new System.EventHandler(this.PlayerStats_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -987,5 +1076,10 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Button buttonFPP;
+        private System.Windows.Forms.Button buttonTPP;
+        private System.Windows.Forms.Button buttonDuo;
+        private System.Windows.Forms.Button buttonSolo;
+        private System.Windows.Forms.Button buttonSquad;
     }
 }

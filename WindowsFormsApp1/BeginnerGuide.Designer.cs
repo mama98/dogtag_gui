@@ -89,18 +89,18 @@
             this.pictureBoxWeapon = new System.Windows.Forms.PictureBox();
             this.buttonBack = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.comboBoxVestLvl = new System.Windows.Forms.ComboBox();
+            this.comboBoxHelmetLvl = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.labelVestSTK = new System.Windows.Forms.Label();
+            this.labelHelmetSTK = new System.Windows.Forms.Label();
             this.pictureBoxCharacter = new System.Windows.Forms.PictureBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShapeWeapon = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.labelHelmetSTK = new System.Windows.Forms.Label();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.labeVestSTK = new System.Windows.Forms.Label();
-            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.comboBoxHelmetLvl = new System.Windows.Forms.ComboBox();
-            this.comboBoxVestLvl = new System.Windows.Forms.ComboBox();
+            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.lineShapeWeapon = new Microsoft.VisualBasic.PowerPacks.LineShape();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -136,7 +136,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.comboBoxHelmetLvl);
             this.splitContainer1.Panel2.Controls.Add(this.label21);
             this.splitContainer1.Panel2.Controls.Add(this.label20);
-            this.splitContainer1.Panel2.Controls.Add(this.labeVestSTK);
+            this.splitContainer1.Panel2.Controls.Add(this.labelVestSTK);
             this.splitContainer1.Panel2.Controls.Add(this.labelHelmetSTK);
             this.splitContainer1.Panel2.Controls.Add(this.pictureBoxCharacter);
             this.splitContainer1.Panel2.Controls.Add(this.shapeContainer1);
@@ -911,6 +911,96 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Weapon Information";
             // 
+            // comboBoxVestLvl
+            // 
+            this.comboBoxVestLvl.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxVestLvl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxVestLvl.FormattingEnabled = true;
+            this.comboBoxVestLvl.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3"});
+            this.comboBoxVestLvl.Location = new System.Drawing.Point(473, 500);
+            this.comboBoxVestLvl.Name = "comboBoxVestLvl";
+            this.comboBoxVestLvl.Size = new System.Drawing.Size(112, 21);
+            this.comboBoxVestLvl.TabIndex = 8;
+            this.comboBoxVestLvl.Text = "0";
+            this.comboBoxVestLvl.SelectedIndexChanged += new System.EventHandler(this.comboBoxVestLvl_SelectedIndexChanged);
+            // 
+            // comboBoxHelmetLvl
+            // 
+            this.comboBoxHelmetLvl.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxHelmetLvl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxHelmetLvl.FormattingEnabled = true;
+            this.comboBoxHelmetLvl.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3"});
+            this.comboBoxHelmetLvl.Location = new System.Drawing.Point(473, 428);
+            this.comboBoxHelmetLvl.Name = "comboBoxHelmetLvl";
+            this.comboBoxHelmetLvl.Size = new System.Drawing.Size(112, 21);
+            this.comboBoxHelmetLvl.TabIndex = 7;
+            this.comboBoxHelmetLvl.Text = "0";
+            this.comboBoxHelmetLvl.SelectedIndexChanged += new System.EventHandler(this.comboBoxHelmetLvl_SelectedIndexChanged);
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.Gray;
+            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label21.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label21.Location = new System.Drawing.Point(316, 495);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(137, 33);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "Vest lvl:";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.Gray;
+            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label20.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label20.Location = new System.Drawing.Point(316, 419);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(137, 36);
+            this.label20.TabIndex = 4;
+            this.label20.Text = "Helmet lvl:";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelVestSTK
+            // 
+            this.labelVestSTK.BackColor = System.Drawing.Color.Gray;
+            this.labelVestSTK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelVestSTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelVestSTK.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVestSTK.ForeColor = System.Drawing.Color.GhostWhite;
+            this.labelVestSTK.Location = new System.Drawing.Point(391, 215);
+            this.labelVestSTK.Name = "labelVestSTK";
+            this.labelVestSTK.Size = new System.Drawing.Size(125, 51);
+            this.labelVestSTK.TabIndex = 3;
+            this.labelVestSTK.Text = "BTK Vest";
+            this.labelVestSTK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelHelmetSTK
+            // 
+            this.labelHelmetSTK.BackColor = System.Drawing.Color.Gray;
+            this.labelHelmetSTK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelHelmetSTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelHelmetSTK.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHelmetSTK.ForeColor = System.Drawing.Color.GhostWhite;
+            this.labelHelmetSTK.Location = new System.Drawing.Point(393, 33);
+            this.labelHelmetSTK.Name = "labelHelmetSTK";
+            this.labelHelmetSTK.Size = new System.Drawing.Size(125, 51);
+            this.labelHelmetSTK.TabIndex = 2;
+            this.labelHelmetSTK.Text = "BTK Helmet";
+            this.labelHelmetSTK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBoxCharacter
             // 
             this.pictureBoxCharacter.BackColor = System.Drawing.Color.Transparent;
@@ -936,59 +1026,6 @@
             this.shapeContainer1.TabIndex = 1;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShapeWeapon
-            // 
-            this.lineShapeWeapon.BorderColor = System.Drawing.Color.DarkGray;
-            this.lineShapeWeapon.Name = "lineShapeWeapon";
-            this.lineShapeWeapon.X1 = 166;
-            this.lineShapeWeapon.X2 = 392;
-            this.lineShapeWeapon.Y1 = 95;
-            this.lineShapeWeapon.Y2 = 54;
-            // 
-            // labelHelmetSTK
-            // 
-            this.labelHelmetSTK.BackColor = System.Drawing.Color.Gray;
-            this.labelHelmetSTK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelHelmetSTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelHelmetSTK.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHelmetSTK.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labelHelmetSTK.Location = new System.Drawing.Point(393, 33);
-            this.labelHelmetSTK.Name = "labelHelmetSTK";
-            this.labelHelmetSTK.Size = new System.Drawing.Size(125, 51);
-            this.labelHelmetSTK.TabIndex = 2;
-            this.labelHelmetSTK.Text = "2";
-            this.labelHelmetSTK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // rectangleShape1
-            // 
-            this.rectangleShape1.BackColor = System.Drawing.Color.Transparent;
-            this.rectangleShape1.BorderColor = System.Drawing.Color.Black;
-            this.rectangleShape1.Location = new System.Drawing.Point(392, 32);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(126, 52);
-            // 
-            // labeVestSTK
-            // 
-            this.labeVestSTK.BackColor = System.Drawing.Color.Gray;
-            this.labeVestSTK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labeVestSTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labeVestSTK.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeVestSTK.ForeColor = System.Drawing.Color.GhostWhite;
-            this.labeVestSTK.Location = new System.Drawing.Point(391, 215);
-            this.labeVestSTK.Name = "labeVestSTK";
-            this.labeVestSTK.Size = new System.Drawing.Size(125, 51);
-            this.labeVestSTK.TabIndex = 3;
-            this.labeVestSTK.Text = "2";
-            this.labeVestSTK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // rectangleShape2
-            // 
-            this.rectangleShape2.BackColor = System.Drawing.Color.Transparent;
-            this.rectangleShape2.BorderColor = System.Drawing.Color.Black;
-            this.rectangleShape2.Location = new System.Drawing.Point(390, 214);
-            this.rectangleShape2.Name = "rectangleShape2";
-            this.rectangleShape2.Size = new System.Drawing.Size(126, 52);
-            // 
             // lineShape1
             // 
             this.lineShape1.BorderColor = System.Drawing.Color.DarkGray;
@@ -998,67 +1035,30 @@
             this.lineShape1.Y1 = 273;
             this.lineShape1.Y2 = 236;
             // 
-            // label20
+            // rectangleShape2
             // 
-            this.label20.BackColor = System.Drawing.Color.Gray;
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label20.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label20.Location = new System.Drawing.Point(316, 419);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(137, 36);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Helmet lvl:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rectangleShape2.BackColor = System.Drawing.Color.Transparent;
+            this.rectangleShape2.BorderColor = System.Drawing.Color.Black;
+            this.rectangleShape2.Location = new System.Drawing.Point(390, 214);
+            this.rectangleShape2.Name = "rectangleShape2";
+            this.rectangleShape2.Size = new System.Drawing.Size(126, 52);
             // 
-            // label21
+            // rectangleShape1
             // 
-            this.label21.BackColor = System.Drawing.Color.Gray;
-            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label21.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label21.Location = new System.Drawing.Point(316, 495);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(137, 33);
-            this.label21.TabIndex = 5;
-            this.label21.Text = "Vest lvl:";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rectangleShape1.BackColor = System.Drawing.Color.Transparent;
+            this.rectangleShape1.BorderColor = System.Drawing.Color.Black;
+            this.rectangleShape1.Location = new System.Drawing.Point(392, 32);
+            this.rectangleShape1.Name = "rectangleShape1";
+            this.rectangleShape1.Size = new System.Drawing.Size(126, 52);
             // 
-            // comboBoxHelmetLvl
+            // lineShapeWeapon
             // 
-            this.comboBoxHelmetLvl.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxHelmetLvl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxHelmetLvl.FormattingEnabled = true;
-            this.comboBoxHelmetLvl.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3"});
-            this.comboBoxHelmetLvl.Location = new System.Drawing.Point(473, 428);
-            this.comboBoxHelmetLvl.Name = "comboBoxHelmetLvl";
-            this.comboBoxHelmetLvl.Size = new System.Drawing.Size(112, 21);
-            this.comboBoxHelmetLvl.TabIndex = 7;
-            this.comboBoxHelmetLvl.Text = "0";
-            this.comboBoxHelmetLvl.SelectedIndexChanged += new System.EventHandler(this.comboBoxHelmetLvl_SelectedIndexChanged);
-            // 
-            // comboBoxVestLvl
-            // 
-            this.comboBoxVestLvl.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxVestLvl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxVestLvl.FormattingEnabled = true;
-            this.comboBoxVestLvl.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3"});
-            this.comboBoxVestLvl.Location = new System.Drawing.Point(473, 500);
-            this.comboBoxVestLvl.Name = "comboBoxVestLvl";
-            this.comboBoxVestLvl.Size = new System.Drawing.Size(112, 21);
-            this.comboBoxVestLvl.TabIndex = 8;
-            this.comboBoxVestLvl.Text = "0";
-            this.comboBoxVestLvl.SelectedIndexChanged += new System.EventHandler(this.comboBoxVestLvl_SelectedIndexChanged);
+            this.lineShapeWeapon.BorderColor = System.Drawing.Color.DarkGray;
+            this.lineShapeWeapon.Name = "lineShapeWeapon";
+            this.lineShapeWeapon.X1 = 166;
+            this.lineShapeWeapon.X2 = 392;
+            this.lineShapeWeapon.Y1 = 95;
+            this.lineShapeWeapon.Y2 = 54;
             // 
             // BeginnerGuide
             // 
@@ -1159,7 +1159,7 @@
         private System.Windows.Forms.ComboBox comboBoxHelmetLvl;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label labeVestSTK;
+        private System.Windows.Forms.Label labelVestSTK;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
