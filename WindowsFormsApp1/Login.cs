@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using DogtagCLI;
+
 namespace WindowsFormsApp1
 {
 
@@ -28,6 +30,7 @@ namespace WindowsFormsApp1
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             //TODO add API request
+            
             if(inputLogin== "mikumama")
             {
                 UserChoice frm = new UserChoice();

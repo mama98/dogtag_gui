@@ -61,17 +61,17 @@
             // 
             // textBoxLogin
             // 
-            this.textBoxLogin.Font = new System.Drawing.Font("Roboto Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxLogin.Location = new System.Drawing.Point(645, 480);
             this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(168, 30);
+            this.textBoxLogin.Size = new System.Drawing.Size(168, 29);
             this.textBoxLogin.TabIndex = 4;
             this.textBoxLogin.TextChanged += new System.EventHandler(this.textBoxLogin_TextChanged);
             // 
             // labelLogin
             // 
             this.labelLogin.BackColor = System.Drawing.Color.Gray;
-            this.labelLogin.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLogin.ForeColor = System.Drawing.Color.DarkOrange;
             this.labelLogin.Location = new System.Drawing.Point(466, 473);
             this.labelLogin.Name = "labelLogin";

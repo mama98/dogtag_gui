@@ -63,9 +63,13 @@ namespace WindowsFormsApp1
 
             Miku.setUserData(0);
 
-            labelAmmoType.Text = Miku.getName();
-            labelDamageSec.Text = Miku.getId();
-            labelTimePerShot.Text = Miku.getCurrentSeasonId();
+            LastMatch MikuLM = new LastMatch(Miku.getLastMatchId(), Miku.getName());
+
+            MikuLM.setLastMatchInfo(1);
+
+            MikuLM.displayAllData();
+
+            labelAmmoType.Text = MikuLM.lm_assists;
  
         }
 
