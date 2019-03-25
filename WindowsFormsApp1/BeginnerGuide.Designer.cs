@@ -176,7 +176,7 @@
             // 
             // labelGripDeviation
             // 
-            this.labelGripDeviation.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelGripDeviation.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelGripDeviation.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelGripDeviation.Location = new System.Drawing.Point(400, 142);
             this.labelGripDeviation.MaximumSize = new System.Drawing.Size(150, 60);
@@ -188,7 +188,7 @@
             // 
             // labelGripPellet
             // 
-            this.labelGripPellet.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelGripPellet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelGripPellet.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelGripPellet.Location = new System.Drawing.Point(400, 118);
             this.labelGripPellet.MaximumSize = new System.Drawing.Size(150, 60);
@@ -200,7 +200,7 @@
             // 
             // labelGripRecovery
             // 
-            this.labelGripRecovery.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelGripRecovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelGripRecovery.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelGripRecovery.Location = new System.Drawing.Point(400, 91);
             this.labelGripRecovery.MaximumSize = new System.Drawing.Size(150, 60);
@@ -212,7 +212,7 @@
             // 
             // labelGripVertical
             // 
-            this.labelGripVertical.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelGripVertical.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelGripVertical.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelGripVertical.Location = new System.Drawing.Point(400, 64);
             this.labelGripVertical.MaximumSize = new System.Drawing.Size(150, 60);
@@ -224,7 +224,7 @@
             // 
             // labelGripHoriz
             // 
-            this.labelGripHoriz.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelGripHoriz.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelGripHoriz.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelGripHoriz.Location = new System.Drawing.Point(400, 37);
             this.labelGripHoriz.MaximumSize = new System.Drawing.Size(150, 60);
@@ -236,7 +236,7 @@
             // 
             // labelGripRecoil
             // 
-            this.labelGripRecoil.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelGripRecoil.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelGripRecoil.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelGripRecoil.Location = new System.Drawing.Point(400, 10);
             this.labelGripRecoil.MaximumSize = new System.Drawing.Size(150, 60);
@@ -249,138 +249,138 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label48.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label48.Location = new System.Drawing.Point(499, 142);
             this.label48.Margin = new System.Windows.Forms.Padding(0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(28, 27);
+            this.label48.Size = new System.Drawing.Size(32, 26);
             this.label48.TabIndex = 34;
             this.label48.Text = "%";
             // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label47.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label47.Location = new System.Drawing.Point(499, 118);
             this.label47.Margin = new System.Windows.Forms.Padding(0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(28, 27);
+            this.label47.Size = new System.Drawing.Size(32, 26);
             this.label47.TabIndex = 33;
             this.label47.Text = "%";
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label46.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label46.Location = new System.Drawing.Point(499, 91);
             this.label46.Margin = new System.Windows.Forms.Padding(0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(28, 27);
+            this.label46.Size = new System.Drawing.Size(32, 26);
             this.label46.TabIndex = 32;
             this.label46.Text = "%";
             // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label45.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label45.Location = new System.Drawing.Point(499, 64);
             this.label45.Margin = new System.Windows.Forms.Padding(0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(28, 27);
+            this.label45.Size = new System.Drawing.Size(32, 26);
             this.label45.TabIndex = 31;
             this.label45.Text = "%";
             // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label44.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label44.Location = new System.Drawing.Point(499, 37);
             this.label44.Margin = new System.Windows.Forms.Padding(0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(28, 27);
+            this.label44.Size = new System.Drawing.Size(32, 26);
             this.label44.TabIndex = 30;
             this.label44.Text = "%";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label43.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label43.Location = new System.Drawing.Point(499, 10);
             this.label43.Margin = new System.Windows.Forms.Padding(0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(28, 27);
+            this.label43.Size = new System.Drawing.Size(32, 26);
             this.label43.TabIndex = 29;
             this.label43.Text = "%";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label19.ForeColor = System.Drawing.Color.DarkOrange;
             this.label19.Location = new System.Drawing.Point(226, 142);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(101, 27);
+            this.label19.Size = new System.Drawing.Size(103, 26);
             this.label19.TabIndex = 23;
             this.label19.Text = "Deviation";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label18.ForeColor = System.Drawing.Color.DarkOrange;
             this.label18.Location = new System.Drawing.Point(226, 118);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(137, 27);
+            this.label18.Size = new System.Drawing.Size(143, 26);
             this.label18.TabIndex = 22;
             this.label18.Text = "Pellet Spread";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label17.ForeColor = System.Drawing.Color.DarkOrange;
             this.label17.Location = new System.Drawing.Point(226, 91);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(99, 27);
+            this.label17.Size = new System.Drawing.Size(104, 26);
             this.label17.TabIndex = 21;
             this.label17.Text = "Recovery";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label16.ForeColor = System.Drawing.Color.DarkOrange;
             this.label16.Location = new System.Drawing.Point(226, 64);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(148, 27);
+            this.label16.Size = new System.Drawing.Size(152, 26);
             this.label16.TabIndex = 20;
             this.label16.Text = "Vertical Recoil";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label15.ForeColor = System.Drawing.Color.DarkOrange;
             this.label15.Location = new System.Drawing.Point(226, 37);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(131, 27);
+            this.label15.Size = new System.Drawing.Size(136, 26);
             this.label15.TabIndex = 19;
             this.label15.Text = "Horiz. Recoil";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label14.ForeColor = System.Drawing.Color.DarkOrange;
             this.label14.Location = new System.Drawing.Point(223, 10);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(145, 27);
+            this.label14.Size = new System.Drawing.Size(149, 26);
             this.label14.TabIndex = 18;
             this.label14.Text = "Recoil Pattern";
             // 
@@ -433,7 +433,7 @@
             // 
             // labelMuzzleADS
             // 
-            this.labelMuzzleADS.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelMuzzleADS.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelMuzzleADS.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelMuzzleADS.Location = new System.Drawing.Point(400, 143);
             this.labelMuzzleADS.MaximumSize = new System.Drawing.Size(150, 60);
@@ -445,7 +445,7 @@
             // 
             // labelMuzzleSway
             // 
-            this.labelMuzzleSway.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelMuzzleSway.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelMuzzleSway.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelMuzzleSway.Location = new System.Drawing.Point(400, 89);
             this.labelMuzzleSway.MaximumSize = new System.Drawing.Size(150, 60);
@@ -457,7 +457,7 @@
             // 
             // labelMuzzleRecovery
             // 
-            this.labelMuzzleRecovery.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelMuzzleRecovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelMuzzleRecovery.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelMuzzleRecovery.Location = new System.Drawing.Point(400, 62);
             this.labelMuzzleRecovery.MaximumSize = new System.Drawing.Size(150, 60);
@@ -469,7 +469,7 @@
             // 
             // labelMuzzleVetical
             // 
-            this.labelMuzzleVetical.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelMuzzleVetical.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelMuzzleVetical.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelMuzzleVetical.Location = new System.Drawing.Point(400, 35);
             this.labelMuzzleVetical.MaximumSize = new System.Drawing.Size(150, 60);
@@ -481,7 +481,7 @@
             // 
             // labelMuzzleHoriz
             // 
-            this.labelMuzzleHoriz.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelMuzzleHoriz.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelMuzzleHoriz.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelMuzzleHoriz.Location = new System.Drawing.Point(400, 8);
             this.labelMuzzleHoriz.MaximumSize = new System.Drawing.Size(150, 60);
@@ -494,78 +494,78 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label42.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label42.Location = new System.Drawing.Point(499, 143);
             this.label42.Margin = new System.Windows.Forms.Padding(0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(28, 27);
+            this.label42.Size = new System.Drawing.Size(32, 26);
             this.label42.TabIndex = 28;
             this.label42.Text = "%";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label41.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label41.Location = new System.Drawing.Point(499, 116);
             this.label41.Margin = new System.Windows.Forms.Padding(0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(28, 27);
+            this.label41.Size = new System.Drawing.Size(32, 26);
             this.label41.TabIndex = 27;
             this.label41.Text = "%";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label40.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label40.Location = new System.Drawing.Point(499, 89);
             this.label40.Margin = new System.Windows.Forms.Padding(0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(28, 27);
+            this.label40.Size = new System.Drawing.Size(32, 26);
             this.label40.TabIndex = 26;
             this.label40.Text = "%";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label39.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label39.Location = new System.Drawing.Point(499, 62);
             this.label39.Margin = new System.Windows.Forms.Padding(0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(28, 27);
+            this.label39.Size = new System.Drawing.Size(32, 26);
             this.label39.TabIndex = 25;
             this.label39.Text = "%";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label38.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label38.Location = new System.Drawing.Point(499, 35);
             this.label38.Margin = new System.Windows.Forms.Padding(0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(28, 27);
+            this.label38.Size = new System.Drawing.Size(32, 26);
             this.label38.TabIndex = 24;
             this.label38.Text = "%";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label37.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.label37.Location = new System.Drawing.Point(499, 8);
             this.label37.Margin = new System.Windows.Forms.Padding(0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(28, 27);
+            this.label37.Size = new System.Drawing.Size(32, 26);
             this.label37.TabIndex = 23;
             this.label37.Text = "%";
             // 
             // labelMuzzleKick
             // 
-            this.labelMuzzleKick.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelMuzzleKick.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelMuzzleKick.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelMuzzleKick.Location = new System.Drawing.Point(400, 116);
             this.labelMuzzleKick.MaximumSize = new System.Drawing.Size(150, 60);
@@ -578,66 +578,66 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label13.ForeColor = System.Drawing.Color.DarkOrange;
             this.label13.Location = new System.Drawing.Point(226, 143);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(117, 27);
+            this.label13.Size = new System.Drawing.Size(127, 26);
             this.label13.TabIndex = 17;
             this.label13.Text = "ADS Speed";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label12.ForeColor = System.Drawing.Color.DarkOrange;
             this.label12.Location = new System.Drawing.Point(226, 116);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(53, 27);
+            this.label12.Size = new System.Drawing.Size(54, 26);
             this.label12.TabIndex = 16;
             this.label12.Text = "Kick";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label11.ForeColor = System.Drawing.Color.DarkOrange;
             this.label11.Location = new System.Drawing.Point(223, 89);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 27);
+            this.label11.Size = new System.Drawing.Size(66, 26);
             this.label11.TabIndex = 15;
             this.label11.Text = "Sway";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label10.ForeColor = System.Drawing.Color.DarkOrange;
             this.label10.Location = new System.Drawing.Point(223, 62);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 27);
+            this.label10.Size = new System.Drawing.Size(104, 26);
             this.label10.TabIndex = 14;
             this.label10.Text = "Recovery";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label9.ForeColor = System.Drawing.Color.DarkOrange;
             this.label9.Location = new System.Drawing.Point(223, 35);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(148, 27);
+            this.label9.Size = new System.Drawing.Size(152, 26);
             this.label9.TabIndex = 13;
             this.label9.Text = "Vertical Recoil";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label8.ForeColor = System.Drawing.Color.DarkOrange;
             this.label8.Location = new System.Drawing.Point(223, 8);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(131, 27);
+            this.label8.Size = new System.Drawing.Size(136, 26);
             this.label8.TabIndex = 12;
             this.label8.Text = "Horiz. Recoil";
             // 
@@ -684,7 +684,7 @@
             // 
             // labelAmmoType
             // 
-            this.labelAmmoType.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelAmmoType.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelAmmoType.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelAmmoType.Location = new System.Drawing.Point(410, 141);
             this.labelAmmoType.MaximumSize = new System.Drawing.Size(150, 60);
@@ -696,7 +696,7 @@
             // 
             // labelTimePerShot
             // 
-            this.labelTimePerShot.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelTimePerShot.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelTimePerShot.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelTimePerShot.Location = new System.Drawing.Point(405, 114);
             this.labelTimePerShot.MaximumSize = new System.Drawing.Size(150, 60);
@@ -708,7 +708,7 @@
             // 
             // labelMagazine
             // 
-            this.labelMagazine.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelMagazine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelMagazine.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelMagazine.Location = new System.Drawing.Point(430, 87);
             this.labelMagazine.MaximumSize = new System.Drawing.Size(150, 60);
@@ -720,7 +720,7 @@
             // 
             // labelDamageSec
             // 
-            this.labelDamageSec.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelDamageSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelDamageSec.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelDamageSec.Location = new System.Drawing.Point(415, 60);
             this.labelDamageSec.MaximumSize = new System.Drawing.Size(150, 60);
@@ -732,7 +732,7 @@
             // 
             // labelBulletSpeed
             // 
-            this.labelBulletSpeed.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelBulletSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelBulletSpeed.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelBulletSpeed.Location = new System.Drawing.Point(415, 33);
             this.labelBulletSpeed.MaximumSize = new System.Drawing.Size(150, 60);
@@ -744,7 +744,7 @@
             // 
             // labelHitDamage
             // 
-            this.labelHitDamage.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.labelHitDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelHitDamage.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.labelHitDamage.Location = new System.Drawing.Point(415, 6);
             this.labelHitDamage.MaximumSize = new System.Drawing.Size(150, 60);
@@ -758,66 +758,66 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label7.ForeColor = System.Drawing.Color.DarkOrange;
             this.label7.Location = new System.Drawing.Point(223, 141);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 27);
+            this.label7.Size = new System.Drawing.Size(130, 26);
             this.label7.TabIndex = 11;
             this.label7.Text = "Ammo Type";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
             this.label6.Location = new System.Drawing.Point(223, 114);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 27);
+            this.label6.Size = new System.Drawing.Size(113, 26);
             this.label6.TabIndex = 10;
             this.label6.Text = "Time /shot";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
             this.label5.Location = new System.Drawing.Point(223, 87);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(151, 27);
+            this.label5.Size = new System.Drawing.Size(155, 26);
             this.label5.TabIndex = 9;
             this.label5.Text = "Magazine Size";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
             this.label4.Location = new System.Drawing.Point(223, 60);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 27);
+            this.label4.Size = new System.Drawing.Size(118, 26);
             this.label4.TabIndex = 8;
             this.label4.Text = "Damage /s";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
             this.label1.Location = new System.Drawing.Point(223, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 27);
+            this.label1.Size = new System.Drawing.Size(136, 26);
             this.label1.TabIndex = 7;
             this.label1.Text = "Bullet Speed";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Light", 16F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
             this.label2.Location = new System.Drawing.Point(223, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 27);
+            this.label2.Size = new System.Drawing.Size(128, 26);
             this.label2.TabIndex = 5;
             this.label2.Text = "Hit Damage";
             // 
@@ -889,7 +889,7 @@
             this.buttonBack.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonBack.FlatAppearance.BorderSize = 0;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonBack.Location = new System.Drawing.Point(0, 0);
             this.buttonBack.Name = "buttonBack";
@@ -903,11 +903,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto Light", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Coral;
             this.label3.Location = new System.Drawing.Point(12, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(456, 58);
+            this.label3.Size = new System.Drawing.Size(457, 55);
             this.label3.TabIndex = 5;
             this.label3.Text = "Weapon Information";
             // 
@@ -952,7 +952,7 @@
             this.label21.BackColor = System.Drawing.Color.Gray;
             this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label21.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.GhostWhite;
             this.label21.Location = new System.Drawing.Point(316, 495);
             this.label21.Name = "label21";
@@ -966,7 +966,7 @@
             this.label20.BackColor = System.Drawing.Color.Gray;
             this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label20.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.GhostWhite;
             this.label20.Location = new System.Drawing.Point(316, 419);
             this.label20.Name = "label20";

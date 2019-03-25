@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DogtagCLI;
 
 
 namespace WindowsFormsApp1
@@ -19,6 +20,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+       /*
        public class Weapon
         {
             private string m_name;
@@ -29,6 +31,7 @@ namespace WindowsFormsApp1
             private string m_ammotype;
 
         };
+        */
         private void buttonBack_Click(object sender, EventArgs e)
         {
             UserChoice frm = new UserChoice();
@@ -55,6 +58,14 @@ namespace WindowsFormsApp1
             filename= filename+caseSwitchWeapon+".png";
 
             pictureBoxWeapon.Image = Image.FromFile(filename);
+
+            User Miku = new User("Mikumama");
+
+            Miku.setUserData(0);
+
+            labelAmmoType.Text = Miku.getName();
+            labelDamageSec.Text = Miku.getId();
+            labelTimePerShot.Text = Miku.getCurrentSeasonId();
  
         }
 

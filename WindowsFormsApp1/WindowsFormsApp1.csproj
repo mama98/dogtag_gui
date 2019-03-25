@@ -133,5 +133,11 @@
   <ItemGroup>
     <None Include="Resources\erangel.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\dogtag\DEBUGdogtag\DogtagWrapper\DogtagWrapper.vcxproj">
+      <Project>{83994b7d-4688-4f07-86a6-2570d63785b0}</Project>
+      <Name>DogtagWrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
