@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DogtagCLI;
+using System.Threading;
 
+using DogtagCLI;  //Import the wrapper around DogtagCore.
 
 namespace WindowsFormsApp1
 {
@@ -49,7 +50,30 @@ namespace WindowsFormsApp1
             Application.ExitThread(); // Closes the page 
         }
 
-        private void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e)
+        void performLastMatchRequest(LastMatch lastmatch)
+        {
+            lastmatch.setLastMatchInfo(1);
+
+            lastmatch.setAllData();
+
+            lastmatch.displayAllData();
+        }
+
+        void performUserRequest(User user) {
+            user.setUserData(0);
+        }
+
+        void performSeasonRequest(Season season, int timeline)
+        {
+            season.setAllSeasonsData(0);
+
+            season.setUserSeasonData(0, timeline);
+
+            season.displayAllStats();
+        }
+
+        private async void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e) //Add async to multithread it. IMPORTANT.
+        //private void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e)
         {
             string caseSwitchWeapon = (string)comboBoxWeapon.SelectedItem;
 
@@ -59,18 +83,23 @@ namespace WindowsFormsApp1
 
             pictureBoxWeapon.Image = Image.FromFile(filename);
 
-            User Miku = new User("Mikumama");
+            User Marine = new User("Mikumama");
 
-            Miku.setUserData(0);
+            await Task.Run(() => performUserRequest(Marine));
 
-            LastMatch MikuLM = new LastMatch(Miku.getLastMatchId(), Miku.getName());
+            LastMatch MarineLM = new LastMatch(Marine.getLastMatchId(), Marine.getName());
 
-            MikuLM.setLastMatchInfo(1);
+            await Task.Run(() => performLastMatchRequest(MarineLM));
 
-            MikuLM.displayAllData();
+            Season MarineSeason = new Season(Marine.getId(), 0);
 
-            labelAmmoType.Text = MikuLM.lm_assists;
- 
+            await Task.Run(() => performSeasonRequest(MarineSeason, 0));
+
+            labelHitDamage.Text = MarineSeason.getsquad_fpp_kills();
+            labelBulletSpeed.Text = MarineSeason.getsquad_fpp_longestKill();
+            labelDamageSec.Text = MarineSeason.getsquad_fpp_revives();
+            labelMagazine.Text = MarineSeason.getsquad_fpp_weaponsAcquired();
+
         }
 
 
