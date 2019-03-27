@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MapsForm));
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonVikendi = new System.Windows.Forms.Button();
             this.buttonSanhok = new System.Windows.Forms.Button();
-            this.buttonMiramar = new System.Windows.Forms.Button();
             this.buttonErangel = new System.Windows.Forms.Button();
+            this.buttonMiramar = new System.Windows.Forms.Button();
             this.pictureboxMap = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -46,7 +47,7 @@
             this.buttonBack.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonBack.FlatAppearance.BorderSize = 0;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonBack.Location = new System.Drawing.Point(0, 0);
             this.buttonBack.Name = "buttonBack";
@@ -75,7 +76,7 @@
             this.buttonVikendi.BackColor = System.Drawing.Color.Gray;
             this.buttonVikendi.FlatAppearance.BorderSize = 0;
             this.buttonVikendi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonVikendi.Font = new System.Drawing.Font("Roboto Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVikendi.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVikendi.ForeColor = System.Drawing.Color.DarkOrange;
             this.buttonVikendi.Location = new System.Drawing.Point(720, 622);
             this.buttonVikendi.Margin = new System.Windows.Forms.Padding(0);
@@ -91,7 +92,7 @@
             this.buttonSanhok.BackColor = System.Drawing.Color.Gray;
             this.buttonSanhok.FlatAppearance.BorderSize = 0;
             this.buttonSanhok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSanhok.Font = new System.Drawing.Font("Roboto Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSanhok.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSanhok.ForeColor = System.Drawing.Color.DarkOrange;
             this.buttonSanhok.Location = new System.Drawing.Point(526, 622);
             this.buttonSanhok.Margin = new System.Windows.Forms.Padding(0);
@@ -102,27 +103,11 @@
             this.buttonSanhok.UseVisualStyleBackColor = false;
             this.buttonSanhok.Click += new System.EventHandler(this.buttonSanhok_Click);
             // 
-            // buttonMiramar
-            // 
-            this.buttonMiramar.BackColor = System.Drawing.Color.Gray;
-            this.buttonMiramar.FlatAppearance.BorderSize = 0;
-            this.buttonMiramar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMiramar.Font = new System.Drawing.Font("Roboto Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMiramar.ForeColor = System.Drawing.Color.DarkOrange;
-            this.buttonMiramar.Location = new System.Drawing.Point(332, 622);
-            this.buttonMiramar.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonMiramar.Name = "buttonMiramar";
-            this.buttonMiramar.Size = new System.Drawing.Size(194, 50);
-            this.buttonMiramar.TabIndex = 28;
-            this.buttonMiramar.Text = "Miramar";
-            this.buttonMiramar.UseVisualStyleBackColor = false;
-            this.buttonMiramar.Click += new System.EventHandler(this.buttonMiramar_Click);
-            // 
             // buttonErangel
             // 
             this.buttonErangel.FlatAppearance.BorderSize = 0;
             this.buttonErangel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonErangel.Font = new System.Drawing.Font("Roboto Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonErangel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonErangel.ForeColor = System.Drawing.Color.DarkOrange;
             this.buttonErangel.Location = new System.Drawing.Point(138, 622);
             this.buttonErangel.Margin = new System.Windows.Forms.Padding(0);
@@ -132,6 +117,22 @@
             this.buttonErangel.Text = "Erangel";
             this.buttonErangel.UseVisualStyleBackColor = true;
             this.buttonErangel.Click += new System.EventHandler(this.buttonErangel_Click);
+            // 
+            // buttonMiramar
+            // 
+            this.buttonMiramar.BackColor = System.Drawing.Color.Gray;
+            this.buttonMiramar.FlatAppearance.BorderSize = 0;
+            this.buttonMiramar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMiramar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMiramar.ForeColor = System.Drawing.Color.DarkOrange;
+            this.buttonMiramar.Location = new System.Drawing.Point(332, 622);
+            this.buttonMiramar.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonMiramar.Name = "buttonMiramar";
+            this.buttonMiramar.Size = new System.Drawing.Size(194, 50);
+            this.buttonMiramar.TabIndex = 28;
+            this.buttonMiramar.Text = "Miramar";
+            this.buttonMiramar.UseVisualStyleBackColor = false;
+            this.buttonMiramar.Click += new System.EventHandler(this.buttonMiramar_Click);
             // 
             // pictureboxMap
             // 
@@ -152,11 +153,11 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Light", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Coral;
             this.label2.Location = new System.Drawing.Point(983, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 58);
+            this.label2.Size = new System.Drawing.Size(142, 55);
             this.label2.TabIndex = 25;
             this.label2.Text = "Maps";
             // 
@@ -169,7 +170,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonBack);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MapsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MapsForm_Load);
             this.panel1.ResumeLayout(false);

@@ -33,22 +33,22 @@
             this.buttonLogout = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonStats = new System.Windows.Forms.Button();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.buttonMapForm = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonWorkbench = new System.Windows.Forms.Button();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.buttonMapForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -78,7 +78,7 @@
             this.buttonLogout.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonLogout.FlatAppearance.BorderSize = 0;
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogout.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonLogout.Location = new System.Drawing.Point(0, 0);
             this.buttonLogout.Name = "buttonLogout";
@@ -107,7 +107,7 @@
             this.buttonStats.FlatAppearance.BorderSize = 2;
             this.buttonStats.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonStats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStats.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStats.ForeColor = System.Drawing.Color.DarkOrange;
             this.buttonStats.Location = new System.Drawing.Point(132, 549);
             this.buttonStats.Name = "buttonStats";
@@ -116,33 +116,6 @@
             this.buttonStats.Text = "Player\'s stats";
             this.buttonStats.UseVisualStyleBackColor = false;
             this.buttonStats.Click += new System.EventHandler(this.buttonStats_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(21, 155);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(362, 314);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // buttonWorkbench
-            // 
-            this.buttonWorkbench.BackColor = System.Drawing.Color.Transparent;
-            this.buttonWorkbench.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.buttonWorkbench.FlatAppearance.BorderSize = 2;
-            this.buttonWorkbench.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonWorkbench.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonWorkbench.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonWorkbench.ForeColor = System.Drawing.Color.DarkOrange;
-            this.buttonWorkbench.Location = new System.Drawing.Point(134, 546);
-            this.buttonWorkbench.Name = "buttonWorkbench";
-            this.buttonWorkbench.Size = new System.Drawing.Size(175, 41);
-            this.buttonWorkbench.TabIndex = 0;
-            this.buttonWorkbench.Text = "Workbench";
-            this.buttonWorkbench.UseVisualStyleBackColor = false;
-            this.buttonWorkbench.Click += new System.EventHandler(this.buttonWorkbench_Click);
             // 
             // splitContainer2
             // 
@@ -165,6 +138,23 @@
             this.splitContainer2.SplitterDistance = 433;
             this.splitContainer2.TabIndex = 3;
             // 
+            // buttonMapForm
+            // 
+            this.buttonMapForm.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMapForm.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.buttonMapForm.FlatAppearance.BorderSize = 2;
+            this.buttonMapForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMapForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMapForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMapForm.ForeColor = System.Drawing.Color.DarkOrange;
+            this.buttonMapForm.Location = new System.Drawing.Point(146, 546);
+            this.buttonMapForm.Name = "buttonMapForm";
+            this.buttonMapForm.Size = new System.Drawing.Size(175, 41);
+            this.buttonMapForm.TabIndex = 1;
+            this.buttonMapForm.Text = "PUBG Maps";
+            this.buttonMapForm.UseVisualStyleBackColor = false;
+            this.buttonMapForm.Click += new System.EventHandler(this.buttonMapForm_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
@@ -175,22 +165,32 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // buttonMapForm
+            // pictureBox2
             // 
-            this.buttonMapForm.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMapForm.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.buttonMapForm.FlatAppearance.BorderSize = 2;
-            this.buttonMapForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonMapForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMapForm.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMapForm.ForeColor = System.Drawing.Color.DarkOrange;
-            this.buttonMapForm.Location = new System.Drawing.Point(146, 546);
-            this.buttonMapForm.Name = "buttonMapForm";
-            this.buttonMapForm.Size = new System.Drawing.Size(175, 41);
-            this.buttonMapForm.TabIndex = 1;
-            this.buttonMapForm.Text = "PUBG Maps";
-            this.buttonMapForm.UseVisualStyleBackColor = false;
-            this.buttonMapForm.Click += new System.EventHandler(this.buttonMapForm_Click);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(21, 155);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(362, 314);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // buttonWorkbench
+            // 
+            this.buttonWorkbench.BackColor = System.Drawing.Color.Transparent;
+            this.buttonWorkbench.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.buttonWorkbench.FlatAppearance.BorderSize = 2;
+            this.buttonWorkbench.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonWorkbench.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonWorkbench.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonWorkbench.ForeColor = System.Drawing.Color.DarkOrange;
+            this.buttonWorkbench.Location = new System.Drawing.Point(134, 546);
+            this.buttonWorkbench.Name = "buttonWorkbench";
+            this.buttonWorkbench.Size = new System.Drawing.Size(175, 41);
+            this.buttonWorkbench.TabIndex = 0;
+            this.buttonWorkbench.Text = "Workbench";
+            this.buttonWorkbench.UseVisualStyleBackColor = false;
+            this.buttonWorkbench.Click += new System.EventHandler(this.buttonWorkbench_Click);
             // 
             // UserChoice
             // 
@@ -198,7 +198,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 696);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserChoice";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserChoice_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserChoice_FormClosed);
@@ -207,12 +209,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

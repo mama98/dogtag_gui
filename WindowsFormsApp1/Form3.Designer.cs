@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -111,7 +112,7 @@
             this.buttonBack.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonBack.FlatAppearance.BorderSize = 0;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Roboto Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonBack.Location = new System.Drawing.Point(0, 0);
             this.buttonBack.Name = "buttonBack";
@@ -125,11 +126,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto Light", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Coral;
             this.label3.Location = new System.Drawing.Point(23, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(456, 58);
+            this.label3.Size = new System.Drawing.Size(457, 55);
             this.label3.TabIndex = 1;
             this.label3.Text = "Weapon Information";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -169,7 +170,7 @@
             this.buttonVikendi.BackColor = System.Drawing.Color.Gray;
             this.buttonVikendi.FlatAppearance.BorderSize = 0;
             this.buttonVikendi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonVikendi.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVikendi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVikendi.Location = new System.Drawing.Point(418, 492);
             this.buttonVikendi.Margin = new System.Windows.Forms.Padding(0);
             this.buttonVikendi.Name = "buttonVikendi";
@@ -183,7 +184,7 @@
             this.buttonSanhok.BackColor = System.Drawing.Color.Gray;
             this.buttonSanhok.FlatAppearance.BorderSize = 0;
             this.buttonSanhok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSanhok.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSanhok.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSanhok.Location = new System.Drawing.Point(325, 492);
             this.buttonSanhok.Margin = new System.Windows.Forms.Padding(0);
             this.buttonSanhok.Name = "buttonSanhok";
@@ -198,7 +199,7 @@
             this.buttonMiramar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.buttonMiramar.FlatAppearance.BorderSize = 0;
             this.buttonMiramar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonMiramar.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMiramar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMiramar.Location = new System.Drawing.Point(232, 492);
             this.buttonMiramar.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMiramar.Name = "buttonMiramar";
@@ -213,7 +214,7 @@
             this.buttonErangel.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.buttonErangel.FlatAppearance.BorderSize = 0;
             this.buttonErangel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonErangel.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonErangel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonErangel.Location = new System.Drawing.Point(139, 492);
             this.buttonErangel.Margin = new System.Windows.Forms.Padding(0);
             this.buttonErangel.Name = "buttonErangel";
@@ -237,11 +238,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Light", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Coral;
             this.label2.Location = new System.Drawing.Point(462, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 58);
+            this.label2.Size = new System.Drawing.Size(118, 55);
             this.label2.TabIndex = 0;
             this.label2.Text = "Map";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -253,7 +254,9 @@
             this.ClientSize = new System.Drawing.Size(1408, 729);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

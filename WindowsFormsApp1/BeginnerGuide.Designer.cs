@@ -1068,7 +1068,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 696);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BeginnerGuide";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Workbench";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BeginnerGuide_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BeginnerGuide_FormClosed);
