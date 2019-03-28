@@ -36,14 +36,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonFPP = new System.Windows.Forms.Button();
             this.buttonTPP = new System.Windows.Forms.Button();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.labelTeamDamage = new System.Windows.Forms.Label();
+            this.labelTeamKills = new System.Windows.Forms.Label();
             this.labelEnergyDrinks = new System.Windows.Forms.Label();
             this.labelPainkillers = new System.Windows.Forms.Label();
-            this.labelAdrenalineSyringe = new System.Windows.Forms.Label();
+            this.labelBoosts = new System.Windows.Forms.Label();
             this.labelBandages = new System.Windows.Forms.Label();
             this.labelFirstAids = new System.Windows.Forms.Label();
-            this.labelMedkits = new System.Windows.Forms.Label();
+            this.labelHeals = new System.Windows.Forms.Label();
             this.labelBulletsFiredType2 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -71,14 +71,9 @@
             this.labelWeapon1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.labelTotalPlayerRank = new System.Windows.Forms.Label();
             this.labelRank = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.labelTimeSec = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.labelTimeMin = new System.Windows.Forms.Label();
-            this.labelTotalPlayerKillRank = new System.Windows.Forms.Label();
             this.labelKillRank = new System.Windows.Forms.Label();
             this.labelDistance = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -92,11 +87,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelRankKey = new System.Windows.Forms.Label();
             this.buttonAllTime = new System.Windows.Forms.Button();
             this.buttonSeason = new System.Windows.Forms.Button();
             this.buttonLastGame = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.labelTimeSec = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -104,18 +100,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel1.Controls.Add(this.buttonSquad);
+            this.panel1.Controls.Add(this.labelTimeSec);
             this.panel1.Controls.Add(this.buttonDuo);
+            this.panel1.Controls.Add(this.buttonSquad);
             this.panel1.Controls.Add(this.buttonSolo);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label28);
-            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.labelTeamDamage);
+            this.panel1.Controls.Add(this.labelTeamKills);
             this.panel1.Controls.Add(this.labelEnergyDrinks);
             this.panel1.Controls.Add(this.labelPainkillers);
-            this.panel1.Controls.Add(this.labelAdrenalineSyringe);
+            this.panel1.Controls.Add(this.labelBoosts);
             this.panel1.Controls.Add(this.labelBandages);
             this.panel1.Controls.Add(this.labelFirstAids);
-            this.panel1.Controls.Add(this.labelMedkits);
+            this.panel1.Controls.Add(this.labelHeals);
             this.panel1.Controls.Add(this.labelBulletsFiredType2);
             this.panel1.Controls.Add(this.label32);
             this.panel1.Controls.Add(this.label30);
@@ -143,14 +140,9 @@
             this.panel1.Controls.Add(this.labelWeapon1);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.labelTotalPlayerRank);
             this.panel1.Controls.Add(this.labelRank);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.labelTimeSec);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.labelTimeMin);
-            this.panel1.Controls.Add(this.labelTotalPlayerKillRank);
             this.panel1.Controls.Add(this.labelKillRank);
             this.panel1.Controls.Add(this.labelDistance);
             this.panel1.Controls.Add(this.label14);
@@ -164,7 +156,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.labelRankKey);
             this.panel1.Controls.Add(this.buttonAllTime);
             this.panel1.Controls.Add(this.buttonSeason);
             this.panel1.Controls.Add(this.buttonLastGame);
@@ -180,7 +172,7 @@
             this.buttonSquad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSquad.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSquad.ForeColor = System.Drawing.Color.White;
-            this.buttonSquad.Location = new System.Drawing.Point(1055, 75);
+            this.buttonSquad.Location = new System.Drawing.Point(1057, 75);
             this.buttonSquad.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.buttonSquad.Name = "buttonSquad";
             this.buttonSquad.Size = new System.Drawing.Size(79, 40);
@@ -212,7 +204,7 @@
             this.buttonSolo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSolo.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSolo.ForeColor = System.Drawing.Color.White;
-            this.buttonSolo.Location = new System.Drawing.Point(900, 75);
+            this.buttonSolo.Location = new System.Drawing.Point(899, 75);
             this.buttonSolo.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.buttonSolo.Name = "buttonSolo";
             this.buttonSolo.Size = new System.Drawing.Size(79, 40);
@@ -261,76 +253,76 @@
             this.buttonTPP.UseVisualStyleBackColor = false;
             this.buttonTPP.Click += new System.EventHandler(this.buttonTPP_Click);
             // 
-            // label28
+            // labelTeamDamage
             // 
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label28.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.label28.Location = new System.Drawing.Point(351, 486);
-            this.label28.MaximumSize = new System.Drawing.Size(150, 60);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(120, 30);
-            this.label28.TabIndex = 62;
-            this.label28.Text = "2564";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.labelTeamDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.labelTeamDamage.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelTeamDamage.Location = new System.Drawing.Point(353, 486);
+            this.labelTeamDamage.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelTeamDamage.Name = "labelTeamDamage";
+            this.labelTeamDamage.Size = new System.Drawing.Size(120, 30);
+            this.labelTeamDamage.TabIndex = 62;
+            this.labelTeamDamage.Text = "Sample";
+            this.labelTeamDamage.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label27
+            // labelTeamKills
             // 
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label27.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.label27.Location = new System.Drawing.Point(372, 459);
-            this.label27.MaximumSize = new System.Drawing.Size(150, 60);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(101, 30);
-            this.label27.TabIndex = 61;
-            this.label27.Text = "13";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.labelTeamKills.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.labelTeamKills.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelTeamKills.Location = new System.Drawing.Point(372, 459);
+            this.labelTeamKills.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelTeamKills.Name = "labelTeamKills";
+            this.labelTeamKills.Size = new System.Drawing.Size(101, 30);
+            this.labelTeamKills.TabIndex = 61;
+            this.labelTeamKills.Text = "None";
+            this.labelTeamKills.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelEnergyDrinks
             // 
             this.labelEnergyDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelEnergyDrinks.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelEnergyDrinks.Location = new System.Drawing.Point(795, 486);
+            this.labelEnergyDrinks.Location = new System.Drawing.Point(781, 486);
             this.labelEnergyDrinks.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelEnergyDrinks.Name = "labelEnergyDrinks";
-            this.labelEnergyDrinks.Size = new System.Drawing.Size(80, 30);
+            this.labelEnergyDrinks.Size = new System.Drawing.Size(94, 30);
             this.labelEnergyDrinks.TabIndex = 60;
-            this.labelEnergyDrinks.Text = "3";
+            this.labelEnergyDrinks.Text = "Sample";
             this.labelEnergyDrinks.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelPainkillers
             // 
             this.labelPainkillers.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelPainkillers.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelPainkillers.Location = new System.Drawing.Point(795, 459);
+            this.labelPainkillers.Location = new System.Drawing.Point(781, 459);
             this.labelPainkillers.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelPainkillers.Name = "labelPainkillers";
-            this.labelPainkillers.Size = new System.Drawing.Size(80, 30);
+            this.labelPainkillers.Size = new System.Drawing.Size(94, 30);
             this.labelPainkillers.TabIndex = 59;
-            this.labelPainkillers.Text = "2";
+            this.labelPainkillers.Text = "Sample";
             this.labelPainkillers.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // labelAdrenalineSyringe
+            // labelBoosts
             // 
-            this.labelAdrenalineSyringe.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.labelAdrenalineSyringe.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelAdrenalineSyringe.Location = new System.Drawing.Point(795, 432);
-            this.labelAdrenalineSyringe.MaximumSize = new System.Drawing.Size(150, 60);
-            this.labelAdrenalineSyringe.Name = "labelAdrenalineSyringe";
-            this.labelAdrenalineSyringe.Size = new System.Drawing.Size(80, 30);
-            this.labelAdrenalineSyringe.TabIndex = 58;
-            this.labelAdrenalineSyringe.Text = "0";
-            this.labelAdrenalineSyringe.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.labelBoosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.labelBoosts.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelBoosts.Location = new System.Drawing.Point(795, 432);
+            this.labelBoosts.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelBoosts.Name = "labelBoosts";
+            this.labelBoosts.Size = new System.Drawing.Size(80, 30);
+            this.labelBoosts.TabIndex = 58;
+            this.labelBoosts.Text = "0";
+            this.labelBoosts.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelBandages
             // 
             this.labelBandages.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelBandages.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelBandages.Location = new System.Drawing.Point(795, 405);
+            this.labelBandages.Location = new System.Drawing.Point(784, 405);
             this.labelBandages.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelBandages.Name = "labelBandages";
-            this.labelBandages.Size = new System.Drawing.Size(80, 30);
+            this.labelBandages.Size = new System.Drawing.Size(91, 30);
             this.labelBandages.TabIndex = 57;
-            this.labelBandages.Text = "10";
+            this.labelBandages.Text = "Sample";
             this.labelBandages.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelFirstAids
@@ -338,25 +330,25 @@
             this.labelFirstAids.AutoEllipsis = true;
             this.labelFirstAids.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelFirstAids.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelFirstAids.Location = new System.Drawing.Point(795, 378);
+            this.labelFirstAids.Location = new System.Drawing.Point(776, 378);
             this.labelFirstAids.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelFirstAids.Name = "labelFirstAids";
-            this.labelFirstAids.Size = new System.Drawing.Size(80, 30);
+            this.labelFirstAids.Size = new System.Drawing.Size(99, 30);
             this.labelFirstAids.TabIndex = 56;
-            this.labelFirstAids.Text = "4";
+            this.labelFirstAids.Text = "Sample";
             this.labelFirstAids.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // labelMedkits
+            // labelHeals
             // 
-            this.labelMedkits.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.labelMedkits.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelMedkits.Location = new System.Drawing.Point(795, 351);
-            this.labelMedkits.MaximumSize = new System.Drawing.Size(150, 60);
-            this.labelMedkits.Name = "labelMedkits";
-            this.labelMedkits.Size = new System.Drawing.Size(80, 30);
-            this.labelMedkits.TabIndex = 55;
-            this.labelMedkits.Text = "2";
-            this.labelMedkits.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.labelHeals.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.labelHeals.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelHeals.Location = new System.Drawing.Point(795, 351);
+            this.labelHeals.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelHeals.Name = "labelHeals";
+            this.labelHeals.Size = new System.Drawing.Size(80, 30);
+            this.labelHeals.TabIndex = 55;
+            this.labelHeals.Text = "2";
+            this.labelHeals.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelBulletsFiredType2
             // 
@@ -418,7 +410,7 @@
             this.labelBulletsFired2.Name = "labelBulletsFired2";
             this.labelBulletsFired2.Size = new System.Drawing.Size(102, 30);
             this.labelBulletsFired2.TabIndex = 49;
-            this.labelBulletsFired2.Text = "13";
+            this.labelBulletsFired2.Text = "Sample";
             this.labelBulletsFired2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelBulletsFiredType1
@@ -442,7 +434,7 @@
             this.labelBulletsFired1.Name = "labelBulletsFired1";
             this.labelBulletsFired1.Size = new System.Drawing.Size(102, 30);
             this.labelBulletsFired1.TabIndex = 47;
-            this.labelBulletsFired1.Text = "352";
+            this.labelBulletsFired1.Text = "Sample";
             this.labelBulletsFired1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelWeaponChoiceKills
@@ -461,12 +453,12 @@
             // 
             this.labelWeaponChoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelWeaponChoice.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelWeaponChoice.Location = new System.Drawing.Point(816, 240);
+            this.labelWeaponChoice.Location = new System.Drawing.Point(811, 240);
             this.labelWeaponChoice.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelWeaponChoice.Name = "labelWeaponChoice";
-            this.labelWeaponChoice.Size = new System.Drawing.Size(80, 30);
+            this.labelWeaponChoice.Size = new System.Drawing.Size(91, 30);
             this.labelWeaponChoice.TabIndex = 45;
-            this.labelWeaponChoice.Text = "M416";
+            this.labelWeaponChoice.Text = "Sample";
             this.labelWeaponChoice.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label26
@@ -531,9 +523,9 @@
             this.label21.ForeColor = System.Drawing.Color.DarkOrange;
             this.label21.Location = new System.Drawing.Point(545, 432);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(196, 26);
+            this.label21.Size = new System.Drawing.Size(79, 26);
             this.label21.TabIndex = 39;
-            this.label21.Text = "Adrenaline Syringe";
+            this.label21.Text = "Boosts";
             // 
             // label20
             // 
@@ -564,9 +556,9 @@
             this.label18.ForeColor = System.Drawing.Color.DarkOrange;
             this.label18.Location = new System.Drawing.Point(545, 351);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(87, 26);
+            this.label18.Size = new System.Drawing.Size(68, 26);
             this.label18.TabIndex = 36;
-            this.label18.Text = "Medkits";
+            this.label18.Text = "Heals";
             // 
             // label17
             // 
@@ -621,7 +613,7 @@
             this.labelWeapon3.Name = "labelWeapon3";
             this.labelWeapon3.Size = new System.Drawing.Size(89, 30);
             this.labelWeapon3.TabIndex = 31;
-            this.labelWeapon3.Text = "P92";
+            this.labelWeapon3.Text = "Sample";
             this.labelWeapon3.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelWeapon2
@@ -633,7 +625,7 @@
             this.labelWeapon2.Name = "labelWeapon2";
             this.labelWeapon2.Size = new System.Drawing.Size(114, 30);
             this.labelWeapon2.TabIndex = 30;
-            this.labelWeapon2.Text = "Kar-98";
+            this.labelWeapon2.Text = "Sample";
             this.labelWeapon2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelWeapon1
@@ -645,7 +637,7 @@
             this.labelWeapon1.Name = "labelWeapon1";
             this.labelWeapon1.Size = new System.Drawing.Size(112, 30);
             this.labelWeapon1.TabIndex = 29;
-            this.labelWeapon1.Text = "M416";
+            this.labelWeapon1.Text = "Sample";
             this.labelWeapon1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label12
@@ -670,24 +662,12 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "Items";
             // 
-            // labelTotalPlayerRank
-            // 
-            this.labelTotalPlayerRank.AutoSize = true;
-            this.labelTotalPlayerRank.BackColor = System.Drawing.Color.Transparent;
-            this.labelTotalPlayerRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
-            this.labelTotalPlayerRank.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelTotalPlayerRank.Location = new System.Drawing.Point(401, 133);
-            this.labelTotalPlayerRank.Name = "labelTotalPlayerRank";
-            this.labelTotalPlayerRank.Size = new System.Drawing.Size(65, 39);
-            this.labelTotalPlayerRank.TabIndex = 26;
-            this.labelTotalPlayerRank.Text = "/26";
-            // 
             // labelRank
             // 
             this.labelRank.AutoSize = true;
             this.labelRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
             this.labelRank.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelRank.Location = new System.Drawing.Point(350, 133);
+            this.labelRank.Location = new System.Drawing.Point(411, 133);
             this.labelRank.Name = "labelRank";
             this.labelRank.Size = new System.Drawing.Size(55, 39);
             this.labelRank.TabIndex = 25;
@@ -699,11 +679,11 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label11.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label11.Location = new System.Drawing.Point(420, 351);
+            this.label11.Location = new System.Drawing.Point(431, 351);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 26);
+            this.label11.Size = new System.Drawing.Size(31, 26);
             this.label11.TabIndex = 24;
-            this.label11.Text = "km";
+            this.label11.Text = "m";
             // 
             // label10
             // 
@@ -717,65 +697,14 @@
             this.label10.TabIndex = 23;
             this.label10.Text = "s";
             // 
-            // labelTimeSec
-            // 
-            this.labelTimeSec.AutoSize = true;
-            this.labelTimeSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.labelTimeSec.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelTimeSec.Location = new System.Drawing.Point(410, 324);
-            this.labelTimeSec.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelTimeSec.MaximumSize = new System.Drawing.Size(100, 0);
-            this.labelTimeSec.Name = "labelTimeSec";
-            this.labelTimeSec.Size = new System.Drawing.Size(36, 26);
-            this.labelTimeSec.TabIndex = 22;
-            this.labelTimeSec.Text = "49";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label8.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label8.Location = new System.Drawing.Point(367, 324);
-            this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 26);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "min";
-            // 
-            // labelTimeMin
-            // 
-            this.labelTimeMin.AutoSize = true;
-            this.labelTimeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.labelTimeMin.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelTimeMin.Location = new System.Drawing.Point(337, 324);
-            this.labelTimeMin.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelTimeMin.MaximumSize = new System.Drawing.Size(100, 0);
-            this.labelTimeMin.Name = "labelTimeMin";
-            this.labelTimeMin.Size = new System.Drawing.Size(36, 26);
-            this.labelTimeMin.TabIndex = 20;
-            this.labelTimeMin.Text = "26";
-            // 
-            // labelTotalPlayerKillRank
-            // 
-            this.labelTotalPlayerKillRank.AutoSize = true;
-            this.labelTotalPlayerKillRank.BackColor = System.Drawing.Color.Transparent;
-            this.labelTotalPlayerKillRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.labelTotalPlayerKillRank.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelTotalPlayerKillRank.Location = new System.Drawing.Point(420, 216);
-            this.labelTotalPlayerKillRank.Name = "labelTotalPlayerKillRank";
-            this.labelTotalPlayerKillRank.Size = new System.Drawing.Size(42, 26);
-            this.labelTotalPlayerKillRank.TabIndex = 19;
-            this.labelTotalPlayerKillRank.Text = "/26";
-            // 
             // labelKillRank
             // 
             this.labelKillRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelKillRank.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelKillRank.Location = new System.Drawing.Point(346, 216);
+            this.labelKillRank.Location = new System.Drawing.Point(332, 216);
             this.labelKillRank.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelKillRank.Name = "labelKillRank";
-            this.labelKillRank.Size = new System.Drawing.Size(80, 30);
+            this.labelKillRank.Size = new System.Drawing.Size(130, 30);
             this.labelKillRank.TabIndex = 18;
             this.labelKillRank.Text = "1";
             this.labelKillRank.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -784,10 +713,10 @@
             // 
             this.labelDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelDistance.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelDistance.Location = new System.Drawing.Point(345, 351);
+            this.labelDistance.Location = new System.Drawing.Point(310, 350);
             this.labelDistance.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelDistance.Name = "labelDistance";
-            this.labelDistance.Size = new System.Drawing.Size(80, 30);
+            this.labelDistance.Size = new System.Drawing.Size(125, 30);
             this.labelDistance.TabIndex = 17;
             this.labelDistance.Text = "7.8";
             this.labelDistance.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -807,10 +736,10 @@
             // 
             this.labelDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelDamage.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelDamage.Location = new System.Drawing.Point(383, 297);
+            this.labelDamage.Location = new System.Drawing.Point(327, 297);
             this.labelDamage.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelDamage.Name = "labelDamage";
-            this.labelDamage.Size = new System.Drawing.Size(80, 30);
+            this.labelDamage.Size = new System.Drawing.Size(136, 30);
             this.labelDamage.TabIndex = 14;
             this.labelDamage.Text = "1960";
             this.labelDamage.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -843,10 +772,10 @@
             // 
             this.labelKills.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelKills.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelKills.Location = new System.Drawing.Point(383, 186);
+            this.labelKills.Location = new System.Drawing.Point(315, 186);
             this.labelKills.MaximumSize = new System.Drawing.Size(150, 60);
             this.labelKills.Name = "labelKills";
-            this.labelKills.Size = new System.Drawing.Size(80, 30);
+            this.labelKills.Size = new System.Drawing.Size(148, 30);
             this.labelKills.TabIndex = 10;
             this.labelKills.Text = "9";
             this.labelKills.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -917,16 +846,16 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Kills";
             // 
-            // label1
+            // labelRankKey
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
-            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(35, 133);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 39);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Rank";
+            this.labelRankKey.AutoSize = true;
+            this.labelRankKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
+            this.labelRankKey.ForeColor = System.Drawing.Color.DarkOrange;
+            this.labelRankKey.Location = new System.Drawing.Point(35, 133);
+            this.labelRankKey.Name = "labelRankKey";
+            this.labelRankKey.Size = new System.Drawing.Size(98, 39);
+            this.labelRankKey.TabIndex = 3;
+            this.labelRankKey.Text = "Rank";
             // 
             // buttonAllTime
             // 
@@ -993,6 +922,18 @@
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
+            // labelTimeSec
+            // 
+            this.labelTimeSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.labelTimeSec.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelTimeSec.Location = new System.Drawing.Point(343, 324);
+            this.labelTimeSec.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelTimeSec.Name = "labelTimeSec";
+            this.labelTimeSec.Size = new System.Drawing.Size(104, 30);
+            this.labelTimeSec.TabIndex = 66;
+            this.labelTimeSec.Text = "7.8";
+            this.labelTimeSec.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // PlayerStats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1029,20 +970,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelRankKey;
         private System.Windows.Forms.Label labelDistance;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label labelDamage;
         private System.Windows.Forms.Label labelHeadshots;
         private System.Windows.Forms.Label labelDBNO;
-        private System.Windows.Forms.Label labelTimeMin;
-        private System.Windows.Forms.Label labelTotalPlayerKillRank;
         private System.Windows.Forms.Label labelKillRank;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label labelTimeSec;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label labelTotalPlayerRank;
         private System.Windows.Forms.Label labelRank;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
@@ -1059,14 +995,14 @@
         private System.Windows.Forms.Label labelWeapon1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label labelTeamDamage;
+        private System.Windows.Forms.Label labelTeamKills;
         private System.Windows.Forms.Label labelEnergyDrinks;
         private System.Windows.Forms.Label labelPainkillers;
-        private System.Windows.Forms.Label labelAdrenalineSyringe;
+        private System.Windows.Forms.Label labelBoosts;
         private System.Windows.Forms.Label labelBandages;
         private System.Windows.Forms.Label labelFirstAids;
-        private System.Windows.Forms.Label labelMedkits;
+        private System.Windows.Forms.Label labelHeals;
         private System.Windows.Forms.Label labelBulletsFiredType2;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label30;
@@ -1084,5 +1020,6 @@
         private System.Windows.Forms.Button buttonDuo;
         private System.Windows.Forms.Button buttonSolo;
         private System.Windows.Forms.Button buttonSquad;
+        private System.Windows.Forms.Label labelTimeSec;
     }
 }
