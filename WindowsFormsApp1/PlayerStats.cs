@@ -19,8 +19,7 @@ namespace WindowsFormsApp1
             try
             {
                 user.setUserData(1);         //Sets all the relevant data and performs one API call. Pass 1 to get more info
-            } catch
-            {
+            } catch {
                 MessageBox.Show("Too many API Calls ! Please try again in a bit.");
             }
             
@@ -51,12 +50,15 @@ namespace WindowsFormsApp1
         public PlayerStats()
         {
             InitializeComponent();
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
+
             User NewU = new User("Mikumama");
             NewU.setUserData(1); 
 
             LastMatch LM = new LastMatch(NewU.getLastMatchId(), NewU.getName());
             LM.setLastMatchInfo(1);
-            LM.setAllData(); 
+            LM.setAllData();
 
             labelRank.Text = LM.getrank();
             labelKillRank.Text = LM.getkillRank();
@@ -70,6 +72,8 @@ namespace WindowsFormsApp1
             //REMOVE OTHER MED LABELS
             labelBoosts.Text = LM.getboosts();
             //REMOVE OTHER BOOST LABELS
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
         }
 
         private void PlayerStats_FormClosing(object sender, FormClosingEventArgs e)
@@ -89,6 +93,8 @@ namespace WindowsFormsApp1
             buttonLastGame.BackColor = Color.FromName("WindowFrame");
             buttonSeason.BackColor = Color.Gray;
             buttonAllTime.BackColor = Color.Gray;
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
 
             labelRankKey.Text = "Rank";
 
@@ -111,6 +117,8 @@ namespace WindowsFormsApp1
             labelBoosts.Text = LM.getboosts();
             //REMOVE OTHER BOOST LABELS
 
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+
         }
 
         private async void buttonSeason_Click(object sender, EventArgs e)
@@ -118,6 +126,8 @@ namespace WindowsFormsApp1
             buttonSeason.BackColor = Color.FromName("WindowFrame");
             buttonLastGame.BackColor = Color.Gray;
             buttonAllTime.BackColor = Color.Gray;
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
 
             buttonSolo.FlatAppearance.BorderColor = Color.DarkOrange;
             buttonTPP.FlatAppearance.BorderColor = Color.DarkOrange;
@@ -141,6 +151,8 @@ namespace WindowsFormsApp1
             labelTeamDamage.Text = "Sample";
             labelHeals.Text = Current.getsolo_tpp_heals();
             labelBoosts.Text = Current.getsolo_tpp_boosts();
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
         }
 
         private async void buttonAllTime_Click(object sender, EventArgs e)
@@ -148,6 +160,8 @@ namespace WindowsFormsApp1
             buttonAllTime.BackColor = Color.FromName("WindowFrame");
             buttonSeason.BackColor = Color.Gray;
             buttonLastGame.BackColor = Color.Gray;
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
 
             buttonSolo.FlatAppearance.BorderColor = Color.DarkOrange;
             buttonTPP.FlatAppearance.BorderColor = Color.DarkOrange;
@@ -171,6 +185,8 @@ namespace WindowsFormsApp1
             labelTeamDamage.Text = "Sample";
             labelHeals.Text = Life.getsolo_tpp_heals();
             labelBoosts.Text = Life.getsolo_tpp_boosts();
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
         }
 
         private void PlayerStats_Load(object sender, EventArgs e)
