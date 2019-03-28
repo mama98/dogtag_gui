@@ -17,8 +17,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-
-
         private void MapsForm_FormClosed(object sender, FormClosedEventArgs e)
         {
 
@@ -43,7 +41,7 @@ namespace WindowsFormsApp1
 
         private void buttonErangel_Click(object sender, EventArgs e)
         {
-            pictureboxMap.Image = Image.FromFile("../../Resources/erangel.jpg");
+            pictureboxMap.Image = Image.FromFile("../../Resources/Erangel.png");
             buttonErangel.BackColor = Color.FromName("WindowFrame");
             buttonMiramar.BackColor = Color.Gray;
             buttonSanhok.BackColor = Color.Gray;
@@ -52,7 +50,7 @@ namespace WindowsFormsApp1
 
         private void buttonMiramar_Click(object sender, EventArgs e)
         {
-            pictureboxMap.Image = Image.FromFile("../../Resources/miramar.jpg");
+            pictureboxMap.Image = Image.FromFile("../../Resources/Miramar.png");
             buttonMiramar.BackColor = Color.FromName("WindowFrame");
             buttonErangel.BackColor = Color.Gray;
             buttonSanhok.BackColor = Color.Gray;
@@ -61,7 +59,7 @@ namespace WindowsFormsApp1
 
         private void buttonSanhok_Click(object sender, EventArgs e)
         {
-            pictureboxMap.Image = Image.FromFile("../../Resources/sanhok.jpg");
+            pictureboxMap.Image = Image.FromFile("../../Resources/Sanhok.png");
             buttonSanhok.BackColor = Color.FromName("WindowFrame");
             buttonMiramar.BackColor = Color.Gray;
             buttonErangel.BackColor = Color.Gray;
@@ -70,7 +68,7 @@ namespace WindowsFormsApp1
 
         private void buttonVikendi_Click(object sender, EventArgs e)
         {
-            pictureboxMap.Image = Image.FromFile("../../Resources/vikendi.jpg");
+            pictureboxMap.Image = Image.FromFile("../../Resources/Vikendi.png");
             buttonVikendi.BackColor = Color.FromName("WindowFrame");
             buttonMiramar.BackColor = Color.Gray;
             buttonSanhok.BackColor = Color.Gray;
