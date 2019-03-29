@@ -129,8 +129,8 @@ namespace WindowsFormsApp1
             season.displayAllStats();
         }
 
-        private async void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e) //Add async to multithread it. IMPORTANT.
-        //private void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e)
+        //private async void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e) //Add async to multithread it. IMPORTANT. NECESSARY.
+        private void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e)
         {
             string caseSwitchWeapon = (string)comboBoxWeapon.SelectedItem;
 
@@ -139,23 +139,6 @@ namespace WindowsFormsApp1
             filename= filename+caseSwitchWeapon+".png";
 
             pictureBoxWeapon.Image = Image.FromFile(filename);
-
-            User Marine = new User("Mikumama");
-
-            await Task.Run(() => performUserRequest(Marine));
-
-            LastMatch MarineLM = new LastMatch(Marine.getLastMatchId(), Marine.getName());
-
-            await Task.Run(() => performLastMatchRequest(MarineLM));
-
-            Season MarineSeason = new Season(Marine.getId(), 0);
-
-            await Task.Run(() => performSeasonRequest(MarineSeason, 0));
-
-            labelHitDamage.Text = MarineSeason.getsquad_fpp_kills();
-            labelBulletSpeed.Text = MarineSeason.getsquad_fpp_longestKill();
-            labelDamageSec.Text = MarineSeason.getsquad_fpp_revives();
-            labelMagazine.Text = MarineSeason.getsquad_fpp_weaponsAcquired();
 
         }
 

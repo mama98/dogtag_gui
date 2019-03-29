@@ -29,8 +29,21 @@ namespace WindowsFormsApp1
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            //TODO add API request
-            
+            try
+            {
+                User NewU = new User(inputLogin);
+                NewU.setUserData(1);
+                System.IO.File.WriteAllText(@"user.dt", inputLogin);
+
+                UserChoice frm = new UserChoice();
+                frm.Show();
+                this.Hide();
+
+            } catch
+            {
+                MessageBox.Show("The name you entered resulted in an error. Either you typed it wrong, or too many API Calls have been made.");
+            }
+            /*
             if(inputLogin== "mikumama")
             {
                 UserChoice frm = new UserChoice();
@@ -41,6 +54,7 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("¯\\_(ツ)_/¯ Wrong Username");
             }
+            */
         }
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)

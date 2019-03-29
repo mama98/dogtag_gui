@@ -1,7 +1,3 @@
-#ADD MAP THEY SPAWN ON
-#ADD BOOL CARE_PACKAGE SPAWN
-#ADD ATTACHMENT_TYPE
-
 {
   "rifles": {
     "aug": {

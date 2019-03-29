@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -69,7 +70,9 @@ namespace WindowsFormsApp1
 
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
 
-            NewU = new User("Mikumama");
+            string name = File.ReadAllText(@"user.dt");
+
+            NewU = new User(name);
             NewU.setUserData(1); 
 
             LM = new LastMatch(NewU.getLastMatchId(), NewU.getName());
@@ -114,7 +117,9 @@ namespace WindowsFormsApp1
 
             labelRankKey.Text = "Rank";
 
-            NewU = new User("Mikumama");
+            string name = File.ReadAllText(@"user.dt");
+
+            NewU = new User(name);
             await Task.Run(() => performUserRequest(NewU));
 
             LM = new LastMatch(NewU.getLastMatchId(), NewU.getName());
@@ -154,7 +159,9 @@ namespace WindowsFormsApp1
 
             FlagTimeline = 0;
 
-            NewU = new User("Mikumama");
+            string name = File.ReadAllText(@"user.dt");
+
+            NewU = new User(name);
             await Task.Run(() => performUserRequest(NewU));
 
             Current = new Season(NewU.getId(), 0);
@@ -190,7 +197,9 @@ namespace WindowsFormsApp1
 
             FlagTimeline = 1;
 
-            NewU = new User("Mikumama");
+            string name = File.ReadAllText(@"user.dt");
+
+            NewU = new User(name);
             await Task.Run(() => performUserRequest(NewU));
 
             Life = new Season(NewU.getId(), 1);
