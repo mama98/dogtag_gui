@@ -14,6 +14,15 @@ namespace WindowsFormsApp1
 {
     public partial class PlayerStats : Form
     {
+        int FlagTimeline = -1; //Set to 0 for Current, 1 for Lifetime
+        int FlagMatchType = -1; //Set to 0 for Solo, 1 for Duo, 2 for Squad;
+        int FlagView = -1; //Set to 0 for TPP, 1 for FPP;
+
+        User NewU;
+        LastMatch LM;
+        Season Current;
+        Season Life;
+
         void performUserRequest(User user)
         {
             try
@@ -53,10 +62,10 @@ namespace WindowsFormsApp1
 
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
 
-            User NewU = new User("Mikumama");
+            NewU = new User("Mikumama");
             NewU.setUserData(1); 
 
-            LastMatch LM = new LastMatch(NewU.getLastMatchId(), NewU.getName());
+            LM = new LastMatch(NewU.getLastMatchId(), NewU.getName());
             LM.setLastMatchInfo(1);
             LM.setAllData();
 
@@ -98,10 +107,10 @@ namespace WindowsFormsApp1
 
             labelRankKey.Text = "Rank";
 
-            User NewU = new User("Mikumama");
+            NewU = new User("Mikumama");
             await Task.Run(() => performUserRequest(NewU));
 
-            LastMatch LM = new LastMatch(NewU.getLastMatchId(), NewU.getName());
+            LM = new LastMatch(NewU.getLastMatchId(), NewU.getName());
             await Task.Run(() => performLastMatchRequest(LM));
 
             labelRank.Text = LM.getrank();
@@ -132,10 +141,16 @@ namespace WindowsFormsApp1
             buttonSolo.FlatAppearance.BorderColor = Color.DarkOrange;
             buttonTPP.FlatAppearance.BorderColor = Color.DarkOrange;
 
-            User NewU = new User("Mikumama");
+            buttonDuo.FlatAppearance.BorderColor = Color.Black;
+            buttonSquad.FlatAppearance.BorderColor = Color.Black;
+            buttonFPP.FlatAppearance.BorderColor = Color.Black;
+
+            FlagTimeline = 0;
+
+            NewU = new User("Mikumama");
             await Task.Run(() => performUserRequest(NewU));
 
-            Season Current = new Season(NewU.getId(), 0);
+            Current = new Season(NewU.getId(), 0);
             await Task.Run(() => performSeasonRequest(Current, 0));
 
             labelRankKey.Text = "Rank Points";
@@ -166,10 +181,12 @@ namespace WindowsFormsApp1
             buttonSolo.FlatAppearance.BorderColor = Color.DarkOrange;
             buttonTPP.FlatAppearance.BorderColor = Color.DarkOrange;
 
-            User NewU = new User("Mikumama");
+            FlagTimeline = 1;
+
+            NewU = new User("Mikumama");
             await Task.Run(() => performUserRequest(NewU));
 
-            Season Life = new Season(NewU.getId(), 1);
+            Life = new Season(NewU.getId(), 1);
             await Task.Run(() => performSeasonRequest(Life, 1));
 
             labelRankKey.Text = "Rank Points";
@@ -200,6 +217,125 @@ namespace WindowsFormsApp1
             buttonTPP.FlatAppearance.BorderColor = Color.DarkOrange;
             buttonFPP.FlatAppearance.BorderColor = Color.Black;
             buttonFPP.BackColor = Color.Gray;
+
+            FlagView = 0;
+
+            switch (FlagMatchType)
+            {
+                case 0:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getsolo_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getsolo_tpp_dBNOs();
+                            labelHeadshots.Text = Life.getsolo_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getsolo_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getsolo_tpp_heals();
+                            labelBoosts.Text = Life.getsolo_tpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getsolo_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getsolo_tpp_dBNOs();
+                            labelHeadshots.Text = Current.getsolo_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getsolo_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getsolo_tpp_heals();
+                            labelBoosts.Text = Current.getsolo_tpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 1:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getduo_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getduo_tpp_dBNOs();
+                            labelHeadshots.Text = Life.getduo_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getduo_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getduo_tpp_heals();
+                            labelBoosts.Text = Life.getduo_tpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getduo_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getduo_tpp_dBNOs();
+                            labelHeadshots.Text = Current.getduo_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getduo_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getduo_tpp_heals();
+                            labelBoosts.Text = Current.getduo_tpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 2:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getsquad_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getsquad_tpp_dBNOs();
+                            labelHeadshots.Text = Life.getsquad_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getsquad_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getsquad_tpp_heals();
+                            labelBoosts.Text = Life.getsquad_tpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getsquad_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getsquad_tpp_dBNOs();
+                            labelHeadshots.Text = Current.getsquad_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getsquad_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getsquad_tpp_heals();
+                            labelBoosts.Text = Current.getsquad_tpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void buttonFPP_Click(object sender, EventArgs e)
@@ -208,6 +344,125 @@ namespace WindowsFormsApp1
             buttonFPP.FlatAppearance.BorderColor = Color.DarkOrange;
             buttonTPP.FlatAppearance.BorderColor = Color.Black;
             buttonTPP.BackColor = Color.Gray;
+
+            FlagView = 1;
+
+            switch (FlagMatchType)
+            {
+                case 0:
+                    switch (FlagTimeline)
+                    {
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getsolo_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getsolo_fpp_dBNOs();
+                            labelHeadshots.Text = Current.getsolo_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getsolo_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getsolo_fpp_heals();
+                            labelBoosts.Text = Current.getsolo_fpp_boosts();
+                            break;
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getsolo_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getsolo_fpp_dBNOs();
+                            labelHeadshots.Text = Life.getsolo_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getsolo_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getsolo_fpp_heals();
+                            labelBoosts.Text = Life.getsolo_fpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 1:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getduo_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getduo_fpp_dBNOs();
+                            labelHeadshots.Text = Life.getduo_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getduo_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getduo_fpp_heals();
+                            labelBoosts.Text = Life.getduo_fpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getduo_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getduo_fpp_dBNOs();
+                            labelHeadshots.Text = Current.getduo_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getduo_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getduo_fpp_heals();
+                            labelBoosts.Text = Current.getduo_fpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 2:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getsquad_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getsquad_fpp_dBNOs();
+                            labelHeadshots.Text = Life.getsquad_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getsquad_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getsquad_fpp_heals();
+                            labelBoosts.Text = Life.getsquad_fpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getsquad_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getsquad_fpp_dBNOs();
+                            labelHeadshots.Text = Current.getsquad_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getsquad_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getsquad_fpp_heals();
+                            labelBoosts.Text = Current.getsquad_fpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void buttonSolo_Click(object sender, EventArgs e)
@@ -218,6 +473,88 @@ namespace WindowsFormsApp1
             buttonDuo.BackColor = Color.Gray;
             buttonSquad.FlatAppearance.BorderColor = Color.Black;
             buttonSquad.BackColor = Color.Gray;
+
+            FlagMatchType = 0;
+
+            switch (FlagView)
+            {
+                case 0:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getsolo_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getsolo_tpp_dBNOs();
+                            labelHeadshots.Text = Life.getsolo_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getsolo_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getsolo_tpp_heals();
+                            labelBoosts.Text = Life.getsolo_tpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getsolo_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getsolo_tpp_dBNOs();
+                            labelHeadshots.Text = Current.getsolo_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getsolo_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getsolo_tpp_heals();
+                            labelBoosts.Text = Current.getsolo_tpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 1:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getsolo_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getsolo_fpp_dBNOs();
+                            labelHeadshots.Text = Life.getsolo_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getsolo_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getsolo_fpp_heals();
+                            labelBoosts.Text = Life.getsolo_fpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getsolo_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getsolo_fpp_dBNOs();
+                            labelHeadshots.Text = Current.getsolo_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getsolo_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getsolo_fpp_heals();
+                            labelBoosts.Text = Current.getsolo_fpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void buttonDuo_Click(object sender, EventArgs e)
@@ -228,6 +565,88 @@ namespace WindowsFormsApp1
             buttonSolo.BackColor = Color.Gray;
             buttonSquad.FlatAppearance.BorderColor = Color.Black;
             buttonSquad.BackColor = Color.Gray;
+
+            FlagMatchType = 1;
+
+            switch (FlagView)
+            {
+                case 0:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getduo_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getduo_tpp_dBNOs();
+                            labelHeadshots.Text = Life.getduo_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getduo_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getduo_tpp_heals();
+                            labelBoosts.Text = Life.getduo_tpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getduo_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getduo_tpp_dBNOs();
+                            labelHeadshots.Text = Current.getduo_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getduo_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getduo_tpp_heals();
+                            labelBoosts.Text = Current.getduo_tpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 1:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getduo_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getduo_fpp_dBNOs();
+                            labelHeadshots.Text = Life.getduo_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getduo_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getduo_fpp_heals();
+                            labelBoosts.Text = Life.getduo_fpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getduo_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getduo_fpp_dBNOs();
+                            labelHeadshots.Text = Current.getduo_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getduo_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getduo_fpp_heals();
+                            labelBoosts.Text = Current.getduo_fpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void buttonSquad_Click(object sender, EventArgs e)
@@ -238,6 +657,89 @@ namespace WindowsFormsApp1
             buttonDuo.BackColor = Color.Gray;
             buttonSolo.FlatAppearance.BorderColor = Color.Black;
             buttonSolo.BackColor = Color.Gray;
+
+            FlagMatchType = 2;
+
+
+            switch (FlagView)
+            {
+                case 0:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getsquad_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getsquad_tpp_dBNOs();
+                            labelHeadshots.Text = Life.getsquad_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getsquad_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getsquad_tpp_heals();
+                            labelBoosts.Text = Life.getsquad_tpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getsquad_tpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getsquad_tpp_dBNOs();
+                            labelHeadshots.Text = Current.getsquad_tpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getsquad_tpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getsquad_tpp_heals();
+                            labelBoosts.Text = Current.getsquad_tpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case 1:
+                    switch (FlagTimeline)
+                    {
+                        case 1:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Life.getsquad_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Life.getsquad_fpp_dBNOs();
+                            labelHeadshots.Text = Life.getsquad_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Life.getsquad_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Life.getsquad_fpp_heals();
+                            labelBoosts.Text = Life.getsquad_fpp_boosts();
+                            break;
+                        case 0:
+                            labelRankKey.Text = "Rank Points";
+                            labelRank.Text = "Sample";
+                            labelKills.Text = Current.getsquad_fpp_kills();
+                            labelKillRank.Text = "Sample";
+                            labelDBNO.Text = Current.getsquad_fpp_dBNOs();
+                            labelHeadshots.Text = Current.getsquad_fpp_headshotKills();
+                            labelDamage.Text = "Sample";
+                            labelTimeSec.Text = "Sample";
+                            labelDistance.Text = "Sample";
+                            labelTeamKills.Text = Current.getsquad_fpp_teamKills();
+                            labelTeamDamage.Text = "Sample";
+                            labelHeals.Text = Current.getsquad_fpp_heals();
+                            labelBoosts.Text = Current.getsquad_fpp_boosts();
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
