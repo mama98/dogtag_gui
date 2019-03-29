@@ -33,9 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DogtagWrapper, Version=1.0.7024.39828, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="DogtagWrapper, Version=1.0.7027.31620, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\dogtag\DEBUGdogtag\Debug\DogtagWrapper.dll</HintPath>
+      <HintPath>bin\Debug\DogtagWrapper.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
