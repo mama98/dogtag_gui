@@ -128,7 +128,7 @@ namespace WindowsFormsApp1
             buttonAllTime.BackColor = Color.Gray;
 
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
-
+            
             buttonSolo.FlatAppearance.BorderColor = Color.DarkOrange;
             buttonTPP.FlatAppearance.BorderColor = Color.DarkOrange;
 

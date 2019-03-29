@@ -61,8 +61,8 @@
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Gray;
             this.splitContainer1.Panel1.Controls.Add(this.buttonLogout);
-            this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
             this.splitContainer1.Panel1.Controls.Add(this.buttonStats);
+            this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
             // 
             // splitContainer1.Panel2
             // 
@@ -74,7 +74,7 @@
             // 
             // buttonLogout
             // 
-            this.buttonLogout.BackColor = System.Drawing.Color.Gray;
+            this.buttonLogout.BackColor = System.Drawing.Color.DarkGray;
             this.buttonLogout.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonLogout.FlatAppearance.BorderSize = 0;
             this.buttonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -93,17 +93,17 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 115);
+            this.pictureBox1.Location = new System.Drawing.Point(-54, -11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(344, 405);
+            this.pictureBox1.Size = new System.Drawing.Size(534, 736);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // buttonStats
             // 
-            this.buttonStats.BackColor = System.Drawing.Color.Transparent;
-            this.buttonStats.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.buttonStats.BackColor = System.Drawing.Color.DimGray;
+            this.buttonStats.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonStats.FlatAppearance.BorderSize = 2;
             this.buttonStats.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonStats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -120,7 +120,7 @@
             // splitContainer2
             // 
             this.splitContainer2.BackColor = System.Drawing.Color.White;
-            this.splitContainer2.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer2.Location = new System.Drawing.Point(-6, -11);
             this.splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
@@ -132,22 +132,22 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.splitContainer2.Panel2.Controls.Add(this.pictureBox2);
             this.splitContainer2.Panel2.Controls.Add(this.buttonWorkbench);
-            this.splitContainer2.Size = new System.Drawing.Size(866, 690);
-            this.splitContainer2.SplitterDistance = 433;
+            this.splitContainer2.Panel2.Controls.Add(this.pictureBox2);
+            this.splitContainer2.Size = new System.Drawing.Size(879, 707);
+            this.splitContainer2.SplitterDistance = 439;
             this.splitContainer2.TabIndex = 3;
             // 
             // buttonMapForm
             // 
             this.buttonMapForm.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMapForm.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.buttonMapForm.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonMapForm.FlatAppearance.BorderSize = 2;
             this.buttonMapForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonMapForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMapForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMapForm.ForeColor = System.Drawing.Color.DarkOrange;
-            this.buttonMapForm.Location = new System.Drawing.Point(146, 546);
+            this.buttonMapForm.Location = new System.Drawing.Point(141, 560);
             this.buttonMapForm.Name = "buttonMapForm";
             this.buttonMapForm.Size = new System.Drawing.Size(175, 41);
             this.buttonMapForm.TabIndex = 1;
@@ -158,9 +158,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(52, 112);
+            this.pictureBox3.Location = new System.Drawing.Point(-101, -27);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(346, 385);
+            this.pictureBox3.Size = new System.Drawing.Size(666, 749);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
@@ -168,9 +168,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(21, 155);
+            this.pictureBox2.Location = new System.Drawing.Point(-80, -27);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(362, 314);
+            this.pictureBox2.Size = new System.Drawing.Size(642, 749);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -178,13 +178,13 @@
             // buttonWorkbench
             // 
             this.buttonWorkbench.BackColor = System.Drawing.Color.Transparent;
-            this.buttonWorkbench.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.buttonWorkbench.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonWorkbench.FlatAppearance.BorderSize = 2;
             this.buttonWorkbench.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonWorkbench.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonWorkbench.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonWorkbench.ForeColor = System.Drawing.Color.DarkOrange;
-            this.buttonWorkbench.Location = new System.Drawing.Point(134, 546);
+            this.buttonWorkbench.Location = new System.Drawing.Point(128, 560);
             this.buttonWorkbench.Name = "buttonWorkbench";
             this.buttonWorkbench.Size = new System.Drawing.Size(175, 41);
             this.buttonWorkbench.TabIndex = 0;
