@@ -10,6 +10,13 @@ using System.Windows.Forms;
 
 using DogtagCLI;
 
+/*
+A FAIRE :
+
+Changer les boutons TPP/FPP, Solo/Duo/Squad pour que si on les selectionne avant de cliquer sur Current Season/All Time, ils n'apparaissent pas en Orange en plus de TPP/Solo.
+     
+*/
+
 namespace WindowsFormsApp1
 {
     public partial class PlayerStats : Form
