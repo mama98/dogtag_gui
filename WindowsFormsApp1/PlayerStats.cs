@@ -70,6 +70,12 @@ namespace WindowsFormsApp1
 
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
 
+            buttonFPP.Hide();
+            buttonTPP.Hide();
+            buttonSolo.Hide();
+            buttonDuo.Hide();
+            buttonSquad.Hide();
+
             string name = File.ReadAllText(@"user.dt");
 
             NewU = new User(name);
@@ -109,6 +115,15 @@ namespace WindowsFormsApp1
 
         private async void buttonLastGame_Click(object sender, EventArgs e)
         {
+            buttonFPP.Hide();
+            buttonTPP.Hide();
+            buttonSolo.Hide();
+            buttonDuo.Hide();
+            buttonSquad.Hide();
+
+            FlagView = 0;
+            FlagMatchType = 0;
+
             buttonLastGame.BackColor = Color.FromName("WindowFrame");
             buttonSeason.BackColor = Color.Gray;
             buttonAllTime.BackColor = Color.Gray;
@@ -144,6 +159,12 @@ namespace WindowsFormsApp1
 
         private async void buttonSeason_Click(object sender, EventArgs e)
         {
+            buttonFPP.Show();
+            buttonTPP.Show();
+            buttonSolo.Show();
+            buttonDuo.Show();
+            buttonSquad.Show();
+
             buttonSeason.BackColor = Color.FromName("WindowFrame");
             buttonLastGame.BackColor = Color.Gray;
             buttonAllTime.BackColor = Color.Gray;
@@ -164,6 +185,8 @@ namespace WindowsFormsApp1
             buttonSquad.BackColor = Color.Gray;
 
             FlagTimeline = 0;
+            FlagView = 0;
+            FlagMatchType = 0;
 
             string name = File.ReadAllText(@"user.dt");
 
@@ -192,6 +215,12 @@ namespace WindowsFormsApp1
 
         private async void buttonAllTime_Click(object sender, EventArgs e)
         {
+            buttonFPP.Show();
+            buttonTPP.Show();
+            buttonSolo.Show();
+            buttonDuo.Show();
+            buttonSquad.Show();
+
             buttonAllTime.BackColor = Color.FromName("WindowFrame");
             buttonSeason.BackColor = Color.Gray;
             buttonLastGame.BackColor = Color.Gray;
@@ -212,6 +241,8 @@ namespace WindowsFormsApp1
             buttonSquad.BackColor = Color.Gray;
 
             FlagTimeline = 1;
+            FlagView = 0;
+            FlagMatchType = 0;
 
             string name = File.ReadAllText(@"user.dt");
 

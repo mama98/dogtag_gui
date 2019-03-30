@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerStats));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonSquad = new System.Windows.Forms.Button();
+            this.labelTimeSec = new System.Windows.Forms.Label();
             this.buttonDuo = new System.Windows.Forms.Button();
+            this.buttonSquad = new System.Windows.Forms.Button();
             this.buttonSolo = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonFPP = new System.Windows.Forms.Button();
@@ -92,7 +93,6 @@
             this.buttonSeason = new System.Windows.Forms.Button();
             this.buttonLastGame = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.labelTimeSec = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -165,21 +165,17 @@
             this.panel1.Size = new System.Drawing.Size(1141, 583);
             this.panel1.TabIndex = 0;
             // 
-            // buttonSquad
+            // labelTimeSec
             // 
-            this.buttonSquad.BackColor = System.Drawing.Color.Gray;
-            this.buttonSquad.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonSquad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSquad.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSquad.ForeColor = System.Drawing.Color.White;
-            this.buttonSquad.Location = new System.Drawing.Point(1057, 75);
-            this.buttonSquad.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.buttonSquad.Name = "buttonSquad";
-            this.buttonSquad.Size = new System.Drawing.Size(79, 40);
-            this.buttonSquad.TabIndex = 65;
-            this.buttonSquad.Text = "Squad";
-            this.buttonSquad.UseVisualStyleBackColor = false;
-            this.buttonSquad.Click += new System.EventHandler(this.buttonSquad_Click);
+            this.labelTimeSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.labelTimeSec.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.labelTimeSec.Location = new System.Drawing.Point(343, 324);
+            this.labelTimeSec.MaximumSize = new System.Drawing.Size(150, 60);
+            this.labelTimeSec.Name = "labelTimeSec";
+            this.labelTimeSec.Size = new System.Drawing.Size(104, 30);
+            this.labelTimeSec.TabIndex = 66;
+            this.labelTimeSec.Text = "7.8";
+            this.labelTimeSec.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // buttonDuo
             // 
@@ -196,6 +192,22 @@
             this.buttonDuo.Text = "Duo";
             this.buttonDuo.UseVisualStyleBackColor = false;
             this.buttonDuo.Click += new System.EventHandler(this.buttonDuo_Click);
+            // 
+            // buttonSquad
+            // 
+            this.buttonSquad.BackColor = System.Drawing.Color.Gray;
+            this.buttonSquad.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonSquad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSquad.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSquad.ForeColor = System.Drawing.Color.White;
+            this.buttonSquad.Location = new System.Drawing.Point(1057, 75);
+            this.buttonSquad.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonSquad.Name = "buttonSquad";
+            this.buttonSquad.Size = new System.Drawing.Size(79, 40);
+            this.buttonSquad.TabIndex = 65;
+            this.buttonSquad.Text = "Squad";
+            this.buttonSquad.UseVisualStyleBackColor = false;
+            this.buttonSquad.Click += new System.EventHandler(this.buttonSquad_Click);
             // 
             // buttonSolo
             // 
@@ -921,18 +933,6 @@
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
-            // labelTimeSec
-            // 
-            this.labelTimeSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.labelTimeSec.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.labelTimeSec.Location = new System.Drawing.Point(343, 324);
-            this.labelTimeSec.MaximumSize = new System.Drawing.Size(150, 60);
-            this.labelTimeSec.Name = "labelTimeSec";
-            this.labelTimeSec.Size = new System.Drawing.Size(104, 30);
-            this.labelTimeSec.TabIndex = 66;
-            this.labelTimeSec.Text = "7.8";
-            this.labelTimeSec.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // PlayerStats
             // 
