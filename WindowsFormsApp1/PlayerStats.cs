@@ -149,13 +149,19 @@ namespace WindowsFormsApp1
             buttonAllTime.BackColor = Color.Gray;
 
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
-            
+
             buttonSolo.FlatAppearance.BorderColor = Color.DarkOrange;
+            buttonSolo.BackColor = Color.FromName("WindowFrame");
             buttonTPP.FlatAppearance.BorderColor = Color.DarkOrange;
+            buttonTPP.BackColor = Color.FromName("WindowFrame");
 
             buttonDuo.FlatAppearance.BorderColor = Color.Black;
             buttonSquad.FlatAppearance.BorderColor = Color.Black;
             buttonFPP.FlatAppearance.BorderColor = Color.Black;
+
+            buttonFPP.BackColor = Color.Gray;
+            buttonDuo.BackColor = Color.Gray;
+            buttonSquad.BackColor = Color.Gray;
 
             FlagTimeline = 0;
 
@@ -193,7 +199,17 @@ namespace WindowsFormsApp1
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
 
             buttonSolo.FlatAppearance.BorderColor = Color.DarkOrange;
+            buttonSolo.BackColor = Color.FromName("WindowFrame");
             buttonTPP.FlatAppearance.BorderColor = Color.DarkOrange;
+            buttonTPP.BackColor = Color.FromName("WindowFrame");
+
+            buttonFPP.FlatAppearance.BorderColor = Color.Black;
+            buttonDuo.FlatAppearance.BorderColor = Color.Black;
+            buttonSquad.FlatAppearance.BorderColor = Color.Black;
+
+            buttonFPP.BackColor = Color.Gray;
+            buttonDuo.BackColor = Color.Gray;
+            buttonSquad.BackColor = Color.Gray;
 
             FlagTimeline = 1;
 
